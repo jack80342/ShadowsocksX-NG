@@ -121,8 +121,8 @@ open class NetWorkMonitor: NSObject {
             var upRate: Float = 0.00
             var downRate: Float = 0.00
             for result in results {
-                downRate += Float((string as NSString).substring(with: result.rangeAt(2)))!
-                upRate += Float((string as NSString).substring(with: result.rangeAt(4)))!
+                downRate += Float((string as NSString).substring(with: result.range(at: 2)))!
+                upRate += Float((string as NSString).substring(with: result.range(at: 4)))!
             }
             statusItemView.setRateData(up: upRate, down: downRate)
         }
