@@ -24,7 +24,7 @@ open class NetWorkMonitor: NSObject {
         statusItemView.showSpeed = true
     }
     
-    func startUpdateTimer() {
+    @objc func startUpdateTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateNetWorkData), userInfo: nil, repeats: true)
         if #available(OSX 10.12, *){
             
@@ -53,7 +53,7 @@ open class NetWorkMonitor: NSObject {
     }
 
     
-    func updateNetWorkData() {
+    @objc func updateNetWorkData() {
 
         if Thread.current.isCancelled{
             timer?.invalidate()

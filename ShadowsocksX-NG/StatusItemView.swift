@@ -105,6 +105,7 @@ open class StatusItemView: NSControl {
         }
     }
     
+    @objc
     func changeMode() {
         darkMode = SystemThemeChangeHelper.isCurrentDark()
         setNeedsDisplay()
