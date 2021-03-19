@@ -274,7 +274,7 @@ class SubscribePreferenceWindowController: NSWindowController
         shakePath.closeSubpath()
         shakeAnimation.path = shakePath
         shakeAnimation.duration = CFTimeInterval(durationOfShake)
-        window?.animations = ["frameOrigin":shakeAnimation]
+        window?.animations = [NSAnimatablePropertyKey.init(rawValue: "frameOrigin"):shakeAnimation]
         window?.animator().setFrameOrigin(window!.frame.origin)
     }
 }
