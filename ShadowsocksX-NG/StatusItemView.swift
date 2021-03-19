@@ -23,7 +23,7 @@ open class StatusItemView: NSControl {
     
     var upRate = "- - KB/s"
     var downRate = "- - KB/s"
-    var image = NSImage(named: "menu_icon")
+    var image = NSImage(named: NSImage.Name(rawValue: "menu_icon"))
 
     var showSpeed:Bool = false
     

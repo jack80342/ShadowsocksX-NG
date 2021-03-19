@@ -102,7 +102,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         setUpMenu(defaults.bool(forKey: "enable_showSpeed"))
         
         statusItem = NSStatusBar.system.statusItem(withLength: 20)
-        let image = NSImage(named: "menu_icon")
+        let image = NSImage(named: NSImage.Name(rawValue: "menu_icon"))
         image?.isTemplate = true
         statusItem?.image = image
         statusItem?.menu = statusMenu
@@ -282,7 +282,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         if editUserRulesWinCtrl != nil {
             editUserRulesWinCtrl.close()
         }
-        let ctrl = UserRulesController(windowNibName: "UserRulesController")
+        let ctrl = UserRulesController(windowNibName: NSNib.Name(rawValue: "UserRulesController"))
         editUserRulesWinCtrl = ctrl
 
         ctrl.showWindow(self)
@@ -294,7 +294,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         if subscribePreferenceWinCtrl != nil {
             subscribePreferenceWinCtrl.close()
         }
-        let ctrl = SubscribePreferenceWindowController(windowNibName: "SubscribePreferenceWindowController")
+        let ctrl = SubscribePreferenceWindowController(windowNibName: NSNib.Name(rawValue: "SubscribePreferenceWindowController"))
         subscribePreferenceWinCtrl = ctrl
         
         ctrl.showWindow(self)
@@ -324,7 +324,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
                     if self.qrcodeWinCtrl != nil{
                         self.qrcodeWinCtrl.close()
                     }
-                    self.qrcodeWinCtrl = SWBQRCodeWindowController(windowNibName: "SWBQRCodeWindowController")
+                    self.qrcodeWinCtrl = SWBQRCodeWindowController(windowNibName: NSNib.Name(rawValue: "SWBQRCodeWindowController"))
                     self.qrcodeWinCtrl.qrCode = profile.URL()!.absoluteString
                     self.qrcodeWinCtrl.title = profile.title()
                     DispatchQueue.main.async {
@@ -372,7 +372,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     @IBAction func updateSubscribeAtLaunch(_ sender: NSMenuItem) {
         let defaults = UserDefaults.standard
         defaults.set(!defaults.bool(forKey: "AutoUpdateSubscribe"), forKey: "AutoUpdateSubscribe")
-        updateSubscribeAtLaunchMenuItem.state = defaults.bool(forKey: "AutoUpdateSubscribe") ? 1 : 0
+        updateSubscribeAtLaunchMenuItem.state = defaults.bool(forKey: "AutoUpdateSubscribe") ? NSControl.StateValue(rawValue: 1) : NSControl.StateValue(rawValue: 0)
     }
     
     
@@ -433,7 +433,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         if preferencesWinCtrl != nil {
             preferencesWinCtrl.close()
         }
-        let ctrl = PreferencesWindowController(windowNibName: "PreferencesWindowController")
+        let ctrl = PreferencesWindowController(windowNibName: NSNib.Name(rawValue: "PreferencesWindowController"))
         preferencesWinCtrl = ctrl
         
         ctrl.showWindow(self)
@@ -445,7 +445,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         if advPreferencesWinCtrl != nil {
             advPreferencesWinCtrl.close()
         }
-        let ctrl = AdvPreferencesWindowController(windowNibName: "AdvPreferencesWindowController")
+        let ctrl = AdvPreferencesWindowController(windowNibName: NSNib.Name(rawValue: "AdvPreferencesWindowController"))
         advPreferencesWinCtrl = ctrl
         
         ctrl.showWindow(self)
@@ -457,7 +457,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         if httpPreferencesWinCtrl != nil {
             httpPreferencesWinCtrl.close()
         }
-        let ctrl = HTTPPreferencesWindowController(windowNibName: "HTTPPreferencesWindowController")
+        let ctrl = HTTPPreferencesWindowController(windowNibName: NSNib.Name(rawValue: "HTTPPreferencesWindowController"))
         httpPreferencesWinCtrl = ctrl
         
         ctrl.showWindow(self)
@@ -469,7 +469,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         if proxyPreferencesWinCtrl != nil {
             proxyPreferencesWinCtrl.close()
         }
-        proxyPreferencesWinCtrl = ProxyPreferencesController(windowNibName: "ProxyPreferencesController")
+        proxyPreferencesWinCtrl = ProxyPreferencesController(windowNibName: NSNib.Name(rawValue: "ProxyPreferencesController"))
         proxyPreferencesWinCtrl.showWindow(self)
         NSApp.activate(ignoringOtherApps: true)
         proxyPreferencesWinCtrl.window?.makeKeyAndOrderFront(self)
@@ -505,7 +505,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         if let appUrl = ws.urlForApplication(withBundleIdentifier: "com.apple.Console") {
             try! ws.launchApplication(at: appUrl
                 ,options: .default
-                ,configuration: [NSWorkspaceLaunchConfigurationArguments: "~/Library/Logs/ss-local.log"])
+                                      ,configuration: [NSWorkspace.LaunchConfigurationKey.arguments: "~/Library/Logs/ss-local.log"])
         }
     }
     
@@ -520,7 +520,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     @IBAction func checkUpdatesAtLaunch(_ sender: NSMenuItem) {
         let defaults = UserDefaults.standard
         defaults.set(!defaults.bool(forKey: "AutoCheckUpdate"), forKey: "AutoCheckUpdate")
-        checkUpdateAtLaunchMenuItem.state = defaults.bool(forKey: "AutoCheckUpdate") ? 1 : 0
+        checkUpdateAtLaunchMenuItem.state = defaults.bool(forKey: "AutoCheckUpdate") ? NSControl.StateValue(rawValue: 1) : NSControl.StateValue(rawValue: 0)
     }
     
     @IBAction func showAbout(_ sender: NSMenuItem) {
@@ -529,7 +529,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     }
     
     func updateLaunchAtLoginMenu() {
-        lanchAtLoginMenuItem.state = launchAtLoginController.launchAtLogin ? 1 : 0
+        lanchAtLoginMenuItem.state = launchAtLoginController.launchAtLogin ? NSControl.StateValue(rawValue: 1) : NSControl.StateValue(rawValue: 0)
     }
     
     // MARK: this function is use to update menu bar
@@ -559,34 +559,34 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         }
 
         serversMenuItem.title = serverMenuText
-        autoModeMenuItem.state = 0
-        globalModeMenuItem.state = 0
-        manualModeMenuItem.state = 0
-        whiteListModeMenuItem.state = 0
-        ACLBackChinaMenuItem.state = 0
-        ACLAutoModeMenuItem.state = 0
-        ACLModeMenuItem.state = 0
+        autoModeMenuItem.state = NSControl.StateValue(rawValue: 0)
+        globalModeMenuItem.state = NSControl.StateValue(rawValue: 0)
+        manualModeMenuItem.state = NSControl.StateValue(rawValue: 0)
+        whiteListModeMenuItem.state = NSControl.StateValue(rawValue: 0)
+        ACLBackChinaMenuItem.state = NSControl.StateValue(rawValue: 0)
+        ACLAutoModeMenuItem.state = NSControl.StateValue(rawValue: 0)
+        ACLModeMenuItem.state = NSControl.StateValue(rawValue: 0)
         if mode == "auto" {
-            autoModeMenuItem.state = 1
+            autoModeMenuItem.state = NSControl.StateValue(rawValue: 1)
         } else if mode == "global" {
-            globalModeMenuItem.state = 1
+            globalModeMenuItem.state = NSControl.StateValue(rawValue: 1)
         } else if mode == "manual" {
-            manualModeMenuItem.state = 1
+            manualModeMenuItem.state = NSControl.StateValue(rawValue: 1)
         } else if mode == "whiteList" {
             let aclMode = defaults.string(forKey: "ACLFileName")!
             switch aclMode {
             case "backchn.acl":
-                ACLModeMenuItem.state = 1
-                ACLBackChinaMenuItem.state = 1
+                ACLModeMenuItem.state = NSControl.StateValue(rawValue: 1)
+                ACLBackChinaMenuItem.state = NSControl.StateValue(rawValue: 1)
                 ACLModeMenuItem.title = "Proxy Back China".localized
                 break
             case "gfwlist.acl":
-                ACLModeMenuItem.state = 1
-                ACLAutoModeMenuItem.state = 1
+                ACLModeMenuItem.state = NSControl.StateValue(rawValue: 1)
+                ACLAutoModeMenuItem.state = NSControl.StateValue(rawValue: 1)
                 ACLModeMenuItem.title = "ACL Auto".localized
                 break
             default:
-                whiteListModeMenuItem.state = 1
+                whiteListModeMenuItem.state = NSControl.StateValue(rawValue: 1)
             }
         }
         updateStatusItemUI()
@@ -600,19 +600,19 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
             return
         }
         if mode == "auto" {
-            image = NSImage(named: "menu_icon_pac")!
+            image = NSImage(named: NSImage.Name(rawValue: "menu_icon_pac"))!
             //statusItem?.title = "Auto".localized
         } else if mode == "global" {
             //statusItem?.title = "Global".localized
-            image = NSImage(named: "menu_icon_global")!
+            image = NSImage(named: NSImage.Name(rawValue: "menu_icon_global"))!
         } else if mode == "manual" {
-            image = NSImage(named: "menu_icon_manual")!
+            image = NSImage(named: NSImage.Name(rawValue: "menu_icon_manual"))!
             //statusItem?.title = "Manual".localized
         } else if mode == "whiteList" {
             if defaults.string(forKey: "ACLFileName")! == "chn.acl" {
-                image = NSImage(named: "menu_icon_white")!
+                image = NSImage(named: NSImage.Name(rawValue: "menu_icon_white"))!
             } else {
-                image = NSImage(named: "menu_icon_acl")!
+                image = NSImage(named: NSImage.Name(rawValue: "menu_icon_acl"))!
             }
         }
         let titleWidth:CGFloat = 0//statusItem?.title!.size(withAttributes: [NSFontAttributeName: statusItem?.button!.font!]).width//这里不包含IP白名单模式等等，需要重新调整//PS还是给上游加上白名单模式？
@@ -634,14 +634,14 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         } else {
             runningStatusMenuItem.title = "Shadowsocks: Off".localized
             toggleRunningMenuItem.title = "Turn Shadowsocks On".localized
-            image = NSImage(named: "menu_icon_disabled")!
+            image = NSImage(named: NSImage.Name(rawValue: "menu_icon_disabled"))!
             image.isTemplate = true
             statusItem!.image = image
         }
 
-        ShowNetworkSpeedItem.state          = defaults.bool(forKey: "enable_showSpeed") ? 1 : 0
-        connectAtLaunchMenuItem.state       = defaults.bool(forKey: "ConnectAtLaunch")  ? 1 : 0
-        checkUpdateAtLaunchMenuItem.state   = defaults.bool(forKey: "AutoCheckUpdate")  ? 1 : 0
+        ShowNetworkSpeedItem.state          = defaults.bool(forKey: "enable_showSpeed") ? NSControl.StateValue(rawValue: 1) : NSControl.StateValue(rawValue: 0)
+        connectAtLaunchMenuItem.state       = defaults.bool(forKey: "ConnectAtLaunch")  ? NSControl.StateValue(rawValue: 1) : NSControl.StateValue(rawValue: 0)
+        checkUpdateAtLaunchMenuItem.state   = defaults.bool(forKey: "AutoCheckUpdate")  ? NSControl.StateValue(rawValue: 1) : NSControl.StateValue(rawValue: 0)
     }
     
     func updateServersMenu() {
@@ -671,7 +671,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
                 }
             }
             if mgr.getActiveProfileId() == p.uuid {
-                item.state = 1
+                item.state = NSControl.StateValue(rawValue: 1)
             }
             if !p.isValid() {
                 item.isEnabled = false
@@ -687,8 +687,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
                     serversMenuItem.submenu?.addItem(groupSubmenuItem)
                     serversMenuItem.submenu?.setSubmenu(groupSubmenu, for: groupSubmenuItem)
                     if mgr.getActiveProfileId() == p.uuid {
-                        item.state = 1
-                        groupSubmenuItem.state = 1
+                        item.state = NSControl.StateValue(rawValue: 1)
+                        groupSubmenuItem.state = NSControl.StateValue(rawValue: 1)
                     }
                     groupSubmenuItem.submenu?.addItem(item)
                     i += 1
@@ -696,8 +696,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
                 }
                 else{
                     if mgr.getActiveProfileId() == p.uuid {
-                        item.state = 1
-                        serversMenuItem.submenu?.item(withTitle: p.ssrGroup)?.state = 1
+                        item.state = NSControl.StateValue(rawValue: 1)
+                        serversMenuItem.submenu?.item(withTitle: p.ssrGroup)?.state = NSControl.StateValue(rawValue: 1)
                     }
                     serversMenuItem.submenu?.item(withTitle: p.ssrGroup)?.submenu?.addItem(item)
                     i += 1
@@ -713,7 +713,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         }
         serversMenuItem.submenu?.addItem(editSubscribeItem!)
         serversMenuItem.submenu?.addItem(autoUpdateSubscribeItem!)
-        autoUpdateSubscribeItem?.state = UserDefaults.standard.bool(forKey: "AutoUpdateSubscribe") ? 1 : 0
+        autoUpdateSubscribeItem?.state = UserDefaults.standard.bool(forKey: "AutoUpdateSubscribe") ? NSControl.StateValue(rawValue: 1) : NSControl.StateValue(rawValue: 0)
         serversMenuItem.submenu?.addItem(updateSubscribeItem!)
         serversMenuItem.submenu?.addItem(showQRItem!)
         serversMenuItem.submenu?.addItem(scanQRItem!)
