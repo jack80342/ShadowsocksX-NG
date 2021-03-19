@@ -101,7 +101,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
 
         setUpMenu(defaults.bool(forKey: "enable_showSpeed"))
         
-        statusItem = NSStatusBar.system().statusItem(withLength: 20)
+        statusItem = NSStatusBar.system.statusItem(withLength: 20)
         let image = NSImage(named: "menu_icon")
         image?.isTemplate = true
         statusItem?.image = image
@@ -501,7 +501,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     }
 
     @IBAction func showLogs(_ sender: NSMenuItem) {
-        let ws = NSWorkspace.shared()
+        let ws = NSWorkspace.shared
         if let appUrl = ws.urlForApplication(withBundleIdentifier: "com.apple.Console") {
             try! ws.launchApplication(at: appUrl
                 ,options: .default
@@ -510,7 +510,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     }
     
     @IBAction func feedback(_ sender: NSMenuItem) {
-        NSWorkspace.shared().open(URL(string: "https://github.com/shadowsocksr/ShadowsocksX-NG/issues")!)
+        NSWorkspace.shared.open(URL(string: "https://github.com/shadowsocksr/ShadowsocksX-NG/issues")!)
     }
     
     @IBAction func checkForUpdate(_ sender: NSMenuItem) {
@@ -759,7 +759,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
                     let alertResult = versionChecker.showAlertView(Title: newVersion["Title"] as! String, SubTitle: newVersion["SubTitle"] as! String, ConfirmBtn: newVersion["ConfirmBtn"] as! String, CancelBtn: newVersion["CancelBtn"] as! String)
                     print(alertResult)
                     if (newVersion["newVersion"] as! Bool && alertResult == 1000){
-                        NSWorkspace.shared().open(URL(string: "https://github.com/qinyuhang/ShadowsocksX-NG-R/releases")!)
+                        NSWorkspace.shared.open(URL(string: "https://github.com/qinyuhang/ShadowsocksX-NG-R/releases")!)
                     }
                 }
             }

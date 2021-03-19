@@ -232,7 +232,7 @@ class ServerProfileManager: NSObject {
             if (result == NSFileHandlingPanelOKButton && (savePanel.url) != nil) {
                 //write jsonArr1 back to file
                 try! jsonString.write(toFile: (savePanel.url?.path)!, atomically: true, encoding: String.Encoding.utf8)
-                NSWorkspace.shared().selectFile((savePanel.url?.path)!, inFileViewerRootedAtPath: (savePanel.directoryURL?.path)!)
+                NSWorkspace.shared.selectFile((savePanel.url?.path)!, inFileViewerRootedAtPath: (savePanel.directoryURL?.path)!)
                 let notification = NSUserNotification()
                 notification.title = "Export Server Profile succeed!".localized
                 notification.informativeText = "Successful Export \(self.profiles.count) items".localized
@@ -250,10 +250,10 @@ class ServerProfileManager: NSObject {
         let destPath = dataPath + "/example-gui-config.json"
         //检测文件是否已经存在，如果存在直接用sharedWorkspace显示
         if fileMgr.fileExists(atPath: destPath) {
-            NSWorkspace.shared().selectFile(destPath, inFileViewerRootedAtPath: dataPath)
+            NSWorkspace.shared.selectFile(destPath, inFileViewerRootedAtPath: dataPath)
         }else{
             try! fileMgr.copyItem(atPath: filePath, toPath: destPath)
-            NSWorkspace.shared().selectFile(destPath, inFileViewerRootedAtPath: dataPath)
+            NSWorkspace.shared.selectFile(destPath, inFileViewerRootedAtPath: dataPath)
         }
     }
 }

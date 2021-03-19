@@ -136,7 +136,7 @@ class PreferencesWindowController: NSWindowController
         updateProfileBoxVisible()
         if profileMgr.profiles.count == 0 {
             defaults.set(true, forKey: "ShadowsocksOn")
-            (NSApplication.shared().delegate as! AppDelegate).toggleRunning((NSApplication.shared().delegate as! AppDelegate).toggleRunningMenuItem)
+            (NSApplication.shared.delegate as! AppDelegate).toggleRunning((NSApplication.shared.delegate as! AppDelegate).toggleRunningMenuItem)
         }
     }
     
@@ -192,7 +192,7 @@ class PreferencesWindowController: NSWindowController
             let ssURL = profile.URL()
             if let url = ssURL {
                 
-                let pboard = NSPasteboard.general()
+                let pboard = NSPasteboard.general
                 pboard.clearContents()
                 let rs = pboard.setString(String(describing: url), forType: NSStringPboardType)//writeObjects([url])
                 if rs {
