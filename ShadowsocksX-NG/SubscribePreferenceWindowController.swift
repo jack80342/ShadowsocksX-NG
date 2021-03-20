@@ -38,7 +38,7 @@ class SubscribePreferenceWindowController: NSWindowController
     }
     
     override func awakeFromNib() {
-        SubscribeTableView.register(forDraggedTypes: [tableViewDragType])
+        SubscribeTableView.registerForDraggedTypes([NSPasteboard.PasteboardType.init(tableViewDragType)])
         SubscribeTableView.allowsMultipleSelection = true
     }
     

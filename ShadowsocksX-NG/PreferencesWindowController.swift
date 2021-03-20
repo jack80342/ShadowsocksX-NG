@@ -95,7 +95,7 @@ class PreferencesWindowController: NSWindowController
     }
     
     override func awakeFromNib() {
-        profilesTableView.register(forDraggedTypes: [tableViewDragType])
+        profilesTableView.registerForDraggedTypes([NSPasteboard.PasteboardType.init(tableViewDragType)])
         profilesTableView.allowsMultipleSelection = true
     }
     
