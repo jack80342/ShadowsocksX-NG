@@ -46,7 +46,7 @@ open class StatusItemView: NSControl {
         statusItem.drawStatusBarBackground(in: dirtyRect, withHighlight: mouseDown)
         
         fontColor = (darkMode||mouseDown) ? NSColor.white : NSColor.black
-        let fontAttributes = [NSAttributedStringKey.font: NSFont.systemFont(ofSize: fontSize), NSAttributedStringKey.foregroundColor: fontColor] as [String : Any]
+        let fontAttributes = [NSAttributedStringKey.font: NSFont.systemFont(ofSize: fontSize), NSAttributedStringKey.foregroundColor: fontColor] as [NSAttributedString.Key : Any]
         if showSpeed{
             let upRateString = NSAttributedString(string: upRate+" ↑", attributes: fontAttributes)
             let upRateRect = upRateString.boundingRect(with: NSSize(width: 100, height: 100), options: .usesLineFragmentOrigin)
