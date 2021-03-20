@@ -40,7 +40,7 @@ open class NetWorkMonitor: NSObject {
 //            CFRunLoopRun()
             
         } else {
-            RunLoop.current.add(timer!, forMode: RunLoopMode.commonModes)
+            RunLoop.current.add(timer!, forMode: RunLoop.Mode.common)
             RunLoop.current.run()
             print(RunLoop.current.getCFRunLoop())
         }

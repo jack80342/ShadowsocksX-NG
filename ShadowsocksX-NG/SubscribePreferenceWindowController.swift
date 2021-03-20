@@ -152,7 +152,7 @@ class SubscribePreferenceWindowController: NSWindowController
             if title != "" {return title}
             else {return "S"}
         } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier("status") {
-            return NSImage(named: NSImage.Name(rawValue: "menu_icon"))
+            return NSImage(named: NSImage.Name("menu_icon"))
         }
         return ""
     }
@@ -274,7 +274,7 @@ class SubscribePreferenceWindowController: NSWindowController
         shakePath.closeSubpath()
         shakeAnimation.path = shakePath
         shakeAnimation.duration = CFTimeInterval(durationOfShake)
-        window?.animations = [NSAnimatablePropertyKey.init(rawValue: "frameOrigin"):shakeAnimation]
+        window?.animations = [NSAnimatablePropertyKey.init("frameOrigin"):shakeAnimation]
         window?.animator().setFrameOrigin(window!.frame.origin)
     }
 }

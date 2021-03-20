@@ -23,7 +23,7 @@ open class StatusItemView: NSControl {
     
     var upRate = "- - KB/s"
     var downRate = "- - KB/s"
-    var image = NSImage(named: NSImage.Name(rawValue: "menu_icon"))
+    var image = NSImage(named: NSImage.Name("menu_icon"))
 
     var showSpeed:Bool = false
     
@@ -46,7 +46,7 @@ open class StatusItemView: NSControl {
         statusItem.drawStatusBarBackground(in: dirtyRect, withHighlight: mouseDown)
         
         fontColor = (darkMode||mouseDown) ? NSColor.white : NSColor.black
-        let fontAttributes = [NSAttributedStringKey.font: NSFont.systemFont(ofSize: fontSize), NSAttributedStringKey.foregroundColor: fontColor] as [NSAttributedString.Key : Any]
+        let fontAttributes = [NSAttributedString.Key.font: NSFont.systemFont(ofSize: fontSize), NSAttributedString.Key.foregroundColor: fontColor] as [NSAttributedString.Key : Any]
         if showSpeed{
             let upRateString = NSAttributedString(string: upRate+" ↑", attributes: fontAttributes)
             let upRateRect = upRateString.boundingRect(with: NSSize(width: 100, height: 100), options: .usesLineFragmentOrigin)
