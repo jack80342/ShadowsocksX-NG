@@ -148,10 +148,10 @@ class SubscribePreferenceWindowController: NSWindowController
         
         let title = getDataAtRow(row)
         
-        if tableColumn?.identifier == "main" {
+        if tableColumn?.identifier == NSUserInterfaceItemIdentifier("main") {
             if title != "" {return title}
             else {return "S"}
-        } else if tableColumn?.identifier == "status" {
+        } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier("status") {
             return NSImage(named: NSImage.Name(rawValue: "menu_icon"))
         }
         return ""
