@@ -152,7 +152,7 @@ class Subscribe: NSObject{
                         continue
                     }
                     if existResult {
-                        self.profileMgr.profiles.replaceSubrange(Range(existIndex..<existIndex + 1), with: [profile])
+                        self.profileMgr.profiles.replaceSubrange(existIndex..<existIndex + 1, with: [profile])
                         continue
                     }
                     self.profileMgr.profiles.append(profile)
