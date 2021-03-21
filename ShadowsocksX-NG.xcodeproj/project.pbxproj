@@ -978,7 +978,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShadowsocksX-NG.app/Contents/MacOS/ShadowsocksX-NG";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShadowsocksX-NG-R.app/Contents/MacOS/ShadowsocksX-NG-R";
 			};
 			name = Debug;
 		};
@@ -997,7 +997,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShadowsocksX-NG.app/Contents/MacOS/ShadowsocksX-NG";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShadowsocksX-NG-R.app/Contents/MacOS/ShadowsocksX-NG-R";
 			};
 			name = Release;
 		};
