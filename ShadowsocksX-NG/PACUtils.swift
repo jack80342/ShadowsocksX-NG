@@ -166,11 +166,11 @@ func UpdatePACFromGFWList() {
     }
     
     let url = UserDefaults.standard.string(forKey: "GFWListURL")
-    Alamofire.request(url!)
-        .responseString {
-            response in
-            if response.result.isSuccess {
-                if let v = response.result.value {
+    AF.request(url!)
+        .responseString { response in
+            switch response.result {
+            case .success:
+                if let v = response.value {
                     do {
                         try v.write(toFile: GFWListFilePath, atomically: true, encoding: String.Encoding.utf8)
                         if GeneratePACFile() {
@@ -184,7 +184,7 @@ func UpdatePACFromGFWList() {
                         
                     }
                 }
-            } else {
+            case .failure( _):
                 // Popup a user notification
                 let notification = NSUserNotification()
                 notification.title = "Failed to download latest GFW List.".localized
@@ -242,11 +242,12 @@ func UpdateACL(){
     }
     
     let url = UserDefaults.standard.string(forKey: "ACLWhiteListURL")
-    Alamofire.request(url!)// request(.GET, url!)
+    AF.request(url!)// request(.GET, url!)
         .responseString {
             response in
-            if response.result.isSuccess {
-                if let v = response.result.value {
+            switch response.result {
+            case .success:
+                if let v = response.value {
                     do {
                         try v.write(toFile: ACLWhiteListFilePath, atomically: true, encoding: String.Encoding.utf8)
                         if GeneratePACFile() {
@@ -260,7 +261,7 @@ func UpdateACL(){
                         
                     }
                 }
-            } else {
+            case .failure( _):
                 // Popup a user notification
                 let notification = NSUserNotification()
                 notification.title = "Failed to download latest White List update succeed.".localized
@@ -270,11 +271,12 @@ func UpdateACL(){
     }
     
     let IPURL = UserDefaults.standard.string(forKey: "ACLAutoListURL")
-    Alamofire.request(IPURL!)
+    AF.request(IPURL!)
         .responseString {
             response in
-            if response.result.isSuccess {
-                if let v = response.result.value {
+            switch response.result {
+            case .success:
+                if let v = response.value {
                     do {
                         try v.write(toFile: ACLGFWListFilePath, atomically: true, encoding: String.Encoding.utf8)
                         if GeneratePACFile() {
@@ -288,7 +290,7 @@ func UpdateACL(){
                         
                     }
                 }
-            } else {
+            case .failure( _):
                 // Popup a user notification
                 let notification = NSUserNotification()
                 notification.title = "Failed to download latest White List update succeed.".localized
@@ -297,3 +299,4 @@ func UpdateACL(){
             }
     }
 }
+

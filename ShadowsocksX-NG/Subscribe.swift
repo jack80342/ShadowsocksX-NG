@@ -101,13 +101,12 @@ class Subscribe: NSObject{
             "User-Agent": "ShadowsocksX-NG-R " + (getLocalInfo()["CFBundleShortVersionString"] as! String) + " Version " + (getLocalInfo()["CFBundleVersion"] as! String)
         ]
         
-        Alamofire.request(url, headers: headers)
-            .responseString{
-                response in
-                if response.result.isSuccess {
-                    callback(response.result.value!)
-                }
-                else{
+        AF.request(url, headers: headers)
+            .responseString{ response in
+                switch response.result {
+                case .success:
+                    callback(response.value!)
+                case .failure( _):
                     callback("")
                     self.pushNotification(title: "请求失败", subtitle: "", info: "发送到\(url)的请求失败，请检查您的网络")
                 }

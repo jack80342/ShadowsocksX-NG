@@ -23,7 +23,7 @@
 		08F162BE1EBEDF0100C52869 /* chn.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162BD1EBEDF0100C52869 /* chn.acl */; };
 		08F162C01EBEE6F800C52869 /* backchn.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162BF1EBEE6F800C52869 /* backchn.acl */; };
 		08F162C21EBEEC0F00C52869 /* gfwlist.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162C11EBEEC0F00C52869 /* gfwlist.acl */; };
-		258E511BA910B0521B24DAB8 /* Pods_ShadowsocksX_NG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283ED1A8E9B711AC65670031 /* Pods_ShadowsocksX_NG.framework */; };
+		1F94B2D84433EFEBF9FAE5D0 /* Pods_ShadowsocksX_NG_R.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF6A36F1612D98DC91EF19A /* Pods_ShadowsocksX_NG_R.framework */; };
 		9B07EFA71D048BBB0052D9DF /* ss-local in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA61D048BBB0052D9DF /* ss-local */; };
 		9B07EFAC1D048E880052D9DF /* menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA81D048E880052D9DF /* menu_icon@2x.png */; };
 		9B07EFAD1D048E880052D9DF /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA91D048E880052D9DF /* menu_icon.png */; };
@@ -109,6 +109,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0040BAA5CCE078754B2DD439 /* Pods-ShadowsocksX-NG-R.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowsocksX-NG-R.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShadowsocksX-NG-R/Pods-ShadowsocksX-NG-R.release.xcconfig"; sourceTree = "<group>"; };
 		083BF8341D82742200831C68 /* NetWorkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkMonitor.swift; sourceTree = "<group>"; };
 		083BF8351D82742200831C68 /* PingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingClient.swift; sourceTree = "<group>"; };
 		083BF8381D82759600831C68 /* StatusItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusItemView.swift; sourceTree = "<group>"; };
@@ -130,7 +131,6 @@
 		08F162C11EBEEC0F00C52869 /* gfwlist.acl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gfwlist.acl; sourceTree = "<group>"; };
 		19083CFCED87354F006967FF /* Pods_ShadowsocksX_NGUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShadowsocksX_NGUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7783AEDB4A3BDDC9FF16AC /* libPods-proxy_conf_helper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-proxy_conf_helper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		283ED1A8E9B711AC65670031 /* Pods_ShadowsocksX_NG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShadowsocksX_NG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		297AF069022A197FD8E9D226 /* Pods-proxy_conf_helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proxy_conf_helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-proxy_conf_helper/Pods-proxy_conf_helper.release.xcconfig"; sourceTree = "<group>"; };
 		388120F062D7EB7DD0D8DDCA /* Pods_ShadowsocksX_NGTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShadowsocksX_NGTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC7CD9886196A997D6FC78D /* Pods-ShadowsocksX-NGTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowsocksX-NGTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShadowsocksX-NGTests/Pods-ShadowsocksX-NGTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +194,7 @@
 		9BEEF0731D04EF3E00FC52B3 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		9BEEF0771D04FE8A00FC52B3 /* LaunchAgentUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchAgentUtils.swift; sourceTree = "<group>"; };
 		9BEEF0791D05631500FC52B3 /* AdvPreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvPreferencesWindowController.swift; sourceTree = "<group>"; };
+		A19B8932C3296BB99D96D636 /* Pods-ShadowsocksX-NG-R.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowsocksX-NG-R.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShadowsocksX-NG-R/Pods-ShadowsocksX-NG-R.debug.xcconfig"; sourceTree = "<group>"; };
 		B4E6A97CA843F3943524B686 /* Pods-proxy_conf_helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proxy_conf_helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-proxy_conf_helper/Pods-proxy_conf_helper.debug.xcconfig"; sourceTree = "<group>"; };
 		C6D4298E1DA75988002A5711 /* install_privoxy.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install_privoxy.sh; sourceTree = "<group>"; };
 		C6D4298F1DA75988002A5711 /* privoxy */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = privoxy; sourceTree = "<group>"; };
@@ -208,6 +209,7 @@
 		C8E42A6A1D4F270A0074C7EA /* UserRulesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRulesController.swift; sourceTree = "<group>"; };
 		C8E42A6F1D4F2CAF0074C7EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/UserRulesController.xib; sourceTree = "<group>"; };
 		C8E42A721D4F2CB10074C7EA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/UserRulesController.strings"; sourceTree = "<group>"; };
+		DFF6A36F1612D98DC91EF19A /* Pods_ShadowsocksX_NG_R.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShadowsocksX_NG_R.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E9FB3855DA55D0710EE7BD /* Pods-ShadowsocksX-NG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowsocksX-NG.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShadowsocksX-NG/Pods-ShadowsocksX-NG.release.xcconfig"; sourceTree = "<group>"; };
 		FE3237E9FB24D9B924A0E630 /* Pods-ShadowsocksX-NG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowsocksX-NG.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShadowsocksX-NG/Pods-ShadowsocksX-NG.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -218,7 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B3FFF3E1D08D9910019A709 /* SystemConfiguration.framework in Frameworks */,
-				258E511BA910B0521B24DAB8 /* Pods_ShadowsocksX_NG.framework in Frameworks */,
+				1F94B2D84433EFEBF9FAE5D0 /* Pods_ShadowsocksX_NG_R.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +254,8 @@
 				50D54926AA21B0D4D8DD9C4F /* Pods-ShadowsocksX-NGUITests.release.xcconfig */,
 				B4E6A97CA843F3943524B686 /* Pods-proxy_conf_helper.debug.xcconfig */,
 				297AF069022A197FD8E9D226 /* Pods-proxy_conf_helper.release.xcconfig */,
+				A19B8932C3296BB99D96D636 /* Pods-ShadowsocksX-NG-R.debug.xcconfig */,
+				0040BAA5CCE078754B2DD439 /* Pods-ShadowsocksX-NG-R.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -396,10 +400,10 @@
 			children = (
 				9B3FFF3D1D08D9910019A709 /* SystemConfiguration.framework */,
 				9B3FFF3B1D08D93B0019A709 /* WebKit.framework */,
-				283ED1A8E9B711AC65670031 /* Pods_ShadowsocksX_NG.framework */,
 				388120F062D7EB7DD0D8DDCA /* Pods_ShadowsocksX_NGTests.framework */,
 				19083CFCED87354F006967FF /* Pods_ShadowsocksX_NGUITests.framework */,
 				1E7783AEDB4A3BDDC9FF16AC /* libPods-proxy_conf_helper.a */,
+				DFF6A36F1612D98DC91EF19A /* Pods_ShadowsocksX_NG_R.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -614,7 +618,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ShadowsocksX-NG/Pods-ShadowsocksX-NG-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ShadowsocksX-NG-R/Pods-ShadowsocksX-NG-R-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
 			);
@@ -625,7 +629,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShadowsocksX-NG/Pods-ShadowsocksX-NG-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShadowsocksX-NG-R/Pods-ShadowsocksX-NG-R-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A3C8167BB5EB01FBDE2A08BC /* [CP] Check Pods Manifest.lock */ = {
@@ -639,7 +643,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ShadowsocksX-NG-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ShadowsocksX-NG-R-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -838,12 +842,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -890,29 +894,26 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		9B0B00091D0460A70040E62B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE3237E9FB24D9B924A0E630 /* Pods-ShadowsocksX-NG.debug.xcconfig */;
+			baseConfigurationReference = A19B8932C3296BB99D96D636 /* Pods-ShadowsocksX-NG-R.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 766AV76B44;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/libcork/include/",
-					"$(SRCROOT)/libipset/include/",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "ShadowsocksX-NG/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -921,7 +922,7 @@
 					"$(PROJECT_DIR)/ShadowsocksX-NG",
 					"$(PROJECT_DIR)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG-R";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -933,19 +934,16 @@
 		};
 		9B0B000A1D0460A70040E62B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9E9FB3855DA55D0710EE7BD /* Pods-ShadowsocksX-NG.release.xcconfig */;
+			baseConfigurationReference = 0040BAA5CCE078754B2DD439 /* Pods-ShadowsocksX-NG-R.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 766AV76B44;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/libcork/include/",
-					"$(SRCROOT)/libipset/include/",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "ShadowsocksX-NG/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -954,7 +952,7 @@
 					"$(PROJECT_DIR)/ShadowsocksX-NG",
 					"$(PROJECT_DIR)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG-R";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1011,7 +1009,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1025,7 +1023,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

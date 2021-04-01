@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_ShadowsocksX_NGVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_ShadowsocksX_NGVersionString[];
+FOUNDATION_EXPORT double Pods_ShadowsocksX_NG_RVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_ShadowsocksX_NG_RVersionString[];
 

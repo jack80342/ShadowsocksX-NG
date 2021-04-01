@@ -1,0 +1,6 @@
+framework module Pods_ShadowsocksX_NG_R {
+  umbrella header "Pods-ShadowsocksX-NG-R-umbrella.h"
+
+  export *
+  module * { export * }
+}
