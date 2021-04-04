@@ -4,18 +4,6 @@
 
 Next Generation of [ShadowsocksX](https://github.com/shadowsocks/shadowsocks-iOS) with SSR support.
 
-**After Download Please check the GPG signature!**
-
-First get [My pub key](https://github.com/qinyuhang/Pubkey) and [import the Pub key]()
-
-`gpg --import pubkeys.txt`
-
-Then [verify the signature](http://stackoverflow.com/questions/19011093/how-do-i-verify-a-gpg-signature-matches-a-public-key-file)
-
-Place the `.dmg` and `.dmg.sig` file together in a directory
-
-`gpg --verify {drag the ShadowsocksX-NG-R8.dmg.sig into your terminal}`
-
 ## Why?
 
 It's hard to maintain the original implement. There are too many unused code in it. 
@@ -30,12 +18,12 @@ Then I rewrite the GUI code by swift.
 
 ### Running
 
-- macOS 10.11 +
+- macOS 10.12 +
 
 ### Building
 
-- Xcode 8.2.1+
-- cocoapod 1.0.1+
+- Xcode 12.4+
+- cocoapod 1.10.1+
 
 ## Fetures
 
@@ -71,11 +59,6 @@ So after you quit the app, the ss-local maybe is still running.
 Add a manual mode which won't configure the system proxy settings. 
 Then you could configure your apps to use socks5 proxy manual.
 
-## Contributing
-
-Contributions must be available on a separately named branch based on the latest version of the main branch develop.
-
-ref: [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/)
 
 ## TODO List
 
