@@ -79,9 +79,10 @@ open class NetWorkMonitor: NSObject {
             let fileHandle = pipe.fileHandleForReading
             let data = fileHandle.readDataToEndOfFile()
             
-            var string = String(data: data, encoding: String.Encoding.utf8)
-            string = string?.substring(from: (string?.range(of: "Aver")?.lowerBound)!)
-            handleNetWorkData(string!)
+            var str = String(data: data, encoding: String.Encoding.utf8)!
+            let index = (str.range(of: "Aver")?.lowerBound)!
+            str = String(str[index...])
+            handleNetWorkData(str)
         } else {
             print("Task failed.")
         }

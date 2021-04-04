@@ -118,7 +118,7 @@ class Subscribe: NSObject{
             let decodeRes = decode64(resString)!
             let range = decodeRes.range(of: maxCountReg, options: .regularExpression)
             if range != nil {
-                let result = decodeRes.substring(with:range!)
+                let result = String(decodeRes[range!])
                 self.maxCount = Int(result.replacingOccurrences(of: "MAX=", with: ""))!
             }
             else{
