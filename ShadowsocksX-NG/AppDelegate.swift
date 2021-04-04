@@ -209,6 +209,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         DispatchQueue.global().async {
             // Version Check!
             if defaults.bool(forKey: "AutoCheckUpdate") {
+                // 如果用户设置了打开时检查更新，那么只在有更新时才提示
                 self.checkForUpdate(mustShowAlert: false)
             }
             if defaults.bool(forKey: "AutoUpdateSubscribe") {
@@ -514,6 +515,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     }
 
     @IBAction func checkForUpdate(_ sender: NSMenuItem) {
+        // 用户手动点击检查更新，那么必须显示提示
         checkForUpdate(mustShowAlert: true)
     }
 
@@ -759,7 +761,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
                         let alertResult = versionChecker.showAlertView(Title: newVersion["Title"] as! String, SubTitle: newVersion["SubTitle"] as! String, ConfirmBtn: newVersion["ConfirmBtn"] as! String, CancelBtn: newVersion["CancelBtn"] as! String)
                         print(alertResult)
                         if (newVersion["newVersion"] as! Bool && alertResult == 1000) {
-                            NSWorkspace.shared.open(URL(string: "https://github.com/jack80342/ShadowsocksX-NG-R/releases")!)
+                            NSWorkspace.shared.open(URL(string: "https://github.com/qinyuhang/ShadowsocksX-NG-R/releases")!)
                         }
                     }
                 }

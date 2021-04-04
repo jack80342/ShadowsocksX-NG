@@ -90,8 +90,18 @@ class VersionChecker: NSObject {
         }
 
         func check(onlineData: NSDictionary) -> NSDictionary {
-            // 已发布的最新版本
-            var versionString: String = onlineData["tag_name"] as! String
+            // 已发布的最新版本，请求频率限制：https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting
+            let tagName = onlineData["tag_name"];
+            if(tagName == nil) {
+                return ["newVersion": false,
+                    "error": "",
+                    "Title": "请求过于频繁",
+                    "SubTitle": "请稍后重试！",
+                    "ConfirmBtn": "确认",
+                    "CancelBtn": ""
+                ]
+            }
+            var versionString: String = tagName as! String
             //  去掉版本前缀：v
             versionString = String(versionString[versionString.range(of: "v")!.upperBound...])
 
