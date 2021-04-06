@@ -8,7 +8,7 @@
 
 
 cd `dirname "${BASH_SOURCE[0]}"`
-ssLocalVersion=2.5.6.12.static
+ssLocalVersion=3.3.5_1.static
 mkdir -p "$HOME/Library/Application Support/ShadowsocksX-NG-R/ss-local-$ssLocalVersion"
 cp -f ss-local "$HOME/Library/Application Support/ShadowsocksX-NG-R/ss-local-$ssLocalVersion/"
 rm -f "$HOME/Library/Application Support/ShadowsocksX-NG-R/ss-local"
