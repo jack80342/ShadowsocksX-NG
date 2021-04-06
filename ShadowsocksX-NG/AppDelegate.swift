@@ -761,7 +761,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
                         let alertResult = versionChecker.showAlertView(Title: newVersion["Title"] as! String, SubTitle: newVersion["SubTitle"] as! String, ConfirmBtn: newVersion["ConfirmBtn"] as! String, CancelBtn: newVersion["CancelBtn"] as! String)
                         print(alertResult)
                         if (newVersion["newVersion"] as! Bool && alertResult == 1000) {
-                            NSWorkspace.shared.open(URL(string: "https://github.com/qinyuhang/ShadowsocksX-NG-R/releases")!)
+                            NSWorkspace.shared.open(URL(string: "https://github.com/jack80342/ShadowsocksX-NG-R/releases")!)
                         }
                     }
                 }
