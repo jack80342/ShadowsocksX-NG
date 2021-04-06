@@ -18,7 +18,7 @@ Then I rewrite the GUI code by swift.
 
 ### Running
 
-- macOS 10.12 +
+- macOS Sierra(v10.12+)
 
 ### Building
 
@@ -61,11 +61,10 @@ Then you could configure your apps to use socks5 proxy manual.
 
 
 ## TODO List
-
-- [x] Embed the http proxy server [privoxy](http://www.privoxy.org/), [get it](https://homebrew.bintray.com/bottles/privoxy-3.0.26.sierra.bottle.tar.gz).
-
-
-- [x] ACL mode support [Shadowsocks ACL](https://github.com/shadowsocksr/shadowsocksr-libev/tree/master/acl)
+- [ ] 用Swift重写剩余的OC代码
+- [ ] 用SwiftUI重写界面
+- [ ] Embed the http proxy server [privoxy](http://www.privoxy.org/), [get it](https://homebrew.bintray.com/bottles/privoxy-3.0.26.sierra.bottle.tar.gz).
+- [ ] ACL mode support [Shadowsocks ACL](https://github.com/shadowsocksr/shadowsocksr-libev/tree/master/acl)
 
 ## Know Issue
 Solved [Issue 1.]() Auto PAC & White list is not working on macOS 10.12 Serria because system proxy not allow [file:///](file:///) protocol.
