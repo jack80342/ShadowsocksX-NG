@@ -18,7 +18,7 @@ Then I rewrite the GUI code by swift.
 
 ### Running
 
-- macOS 10.12 +
+- macOS Sierra(v10.12+)
 
 ### Building
 
