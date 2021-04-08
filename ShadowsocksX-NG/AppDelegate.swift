@@ -502,12 +502,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     }
 
     @IBAction func showLogs(_ sender: NSMenuItem) {
-        let ws = NSWorkspace.shared
-        if let appUrl = ws.urlForApplication(withBundleIdentifier: "com.apple.Console") {
-            try! ws.launchApplication(at: appUrl
-                , options: .default
-                , configuration: [NSWorkspace.LaunchConfigurationKey.arguments: "~/Library/Logs/ss-local.log"])
-        }
+        // 在控制台打开日志
+        NSWorkspace.shared.openFile(NSHomeDirectory() + "/Library/Logs/ss-local.log", withApplication: "Console")
     }
 
     @IBAction func feedback(_ sender: NSMenuItem) {
