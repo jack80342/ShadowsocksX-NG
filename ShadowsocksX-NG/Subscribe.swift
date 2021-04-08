@@ -98,7 +98,7 @@ class Subscribe: NSObject{
             //            "Authorization": "Basic U2hhZG93c29ja1gtTkctUg==",
             //            "Accept": "application/json",
             "token": self.token,
-            "User-Agent": "ShadowsocksX-NG-R " + (getLocalInfo()["CFBundleShortVersionString"] as! String) + " Version " + (getLocalInfo()["CFBundleVersion"] as! String)
+            "User-Agent": "ShadowsocksX-NG-R " + (getLocalInfo()["CFBundleShortVersionString"] as! String)
         ]
         
         AF.request(url, headers: headers)
