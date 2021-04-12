@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-
+import LaunchAtLogin
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDelegate {
@@ -21,7 +21,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     var httpPreferencesWinCtrl: HTTPPreferencesWindowController!
     var subscribePreferenceWinCtrl: SubscribePreferenceWindowController!
 
-    var launchAtLoginController: LaunchAtLoginController = LaunchAtLoginController()
+//    var launchAtLoginController: LaunchAtLoginController = LaunchAtLoginController()
 
     // MARK: Outlets
     @IBOutlet weak var window: NSWindow!
@@ -304,7 +304,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     }
 
     @IBAction func toggleLaunghAtLogin(_ sender: NSMenuItem) {
-        launchAtLoginController.launchAtLogin = !launchAtLoginController.launchAtLogin;
+        LaunchAtLogin.isEnabled = (sender.state == .off)
         updateLaunchAtLoginMenu()
     }
 
@@ -527,7 +527,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     }
 
     func updateLaunchAtLoginMenu() {
-        lanchAtLoginMenuItem.state = launchAtLoginController.launchAtLogin ? NSControl.StateValue(rawValue: 1) : NSControl.StateValue(rawValue: 0)
+        lanchAtLoginMenuItem.state = LaunchAtLogin.isEnabled ? NSControl.StateValue(rawValue: 1) : NSControl.StateValue(rawValue: 0)
     }
 
     // MARK: this function is use to update menu bar
