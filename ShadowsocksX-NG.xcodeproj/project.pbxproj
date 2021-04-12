@@ -26,6 +26,7 @@
 		094A892F26248D4C00394747 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 094A892E26248D4C00394747 /* LaunchAtLogin */; };
 		09666027261D4BC10022C66C /* privoxy in Resources */ = {isa = PBXBuildFile; fileRef = C6D4298F1DA75988002A5711 /* privoxy */; };
 		0966602E261D51580022C66C /* libcrypto.1.0.0.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 09F9DCD1261CC452006CA4B9 /* libcrypto.1.0.0.dylib */; };
+		099C07EE26249E6300D6FD67 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 099C07ED26249E6300D6FD67 /* Alamofire */; };
 		1F94B2D84433EFEBF9FAE5D0 /* Pods_ShadowsocksX_NG_R.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF6A36F1612D98DC91EF19A /* Pods_ShadowsocksX_NG_R.framework */; };
 		9B07EFA71D048BBB0052D9DF /* ss-local in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA61D048BBB0052D9DF /* ss-local */; };
 		9B07EFAC1D048E880052D9DF /* menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA81D048E880052D9DF /* menu_icon@2x.png */; };
@@ -219,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				094A892F26248D4C00394747 /* LaunchAtLogin in Frameworks */,
+				099C07EE26249E6300D6FD67 /* Alamofire in Frameworks */,
 				9B3FFF3E1D08D9910019A709 /* SystemConfiguration.framework in Frameworks */,
 				1F94B2D84433EFEBF9FAE5D0 /* Pods_ShadowsocksX_NG_R.framework in Frameworks */,
 			);
@@ -429,6 +431,7 @@
 			name = "ShadowsocksX-NG-R";
 			packageProductDependencies = (
 				094A892E26248D4C00394747 /* LaunchAtLogin */,
+				099C07ED26249E6300D6FD67 /* Alamofire */,
 			);
 			productName = "ShadowsocksX-NG";
 			productReference = 9B0BFFE51D0460A70040E62B /* ShadowsocksX-NG-R.app */;
@@ -514,6 +517,7 @@
 			mainGroup = 9B0BFFDC1D0460A70040E62B;
 			packageReferences = (
 				094A892D26248D4C00394747 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
+				099C07EC26249E6300D6FD67 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 9B0BFFE61D0460A70040E62B /* Products */;
 			projectDirPath = "";
@@ -642,12 +646,10 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ShadowsocksX-NG-R/Pods-ShadowsocksX-NG-R-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -949,7 +951,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.5.2;
+				MARKETING_VERSION = 1.5.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG-R";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ShadowsocksX-NG/ShadowsocksX-NG-Bridging-Header.h";
@@ -982,7 +984,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.5.2;
+				MARKETING_VERSION = 1.5.3;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG-R";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1045,6 +1047,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 766AV76B44;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -1059,6 +1062,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 766AV76B44;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -1115,6 +1119,14 @@
 				minimumVersion = 4.1.0;
 			};
 		};
+		099C07EC26249E6300D6FD67 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1122,6 +1134,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 094A892D26248D4C00394747 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
 			productName = LaunchAtLogin;
+		};
+		099C07ED26249E6300D6FD67 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 099C07EC26249E6300D6FD67 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
