@@ -66,10 +66,6 @@ Then you could configure your apps to use socks5 proxy manual.
 - [ ] Embed the http proxy server [privoxy](http://www.privoxy.org/), [get it](https://homebrew.bintray.com/bottles/privoxy-3.0.26.sierra.bottle.tar.gz).
 - [ ] ACL mode support [Shadowsocks ACL](https://github.com/shadowsocksr/shadowsocksr-libev/tree/master/acl)
 
-## Know Issue
-Solved [Issue 1.]() Auto PAC & White list is not working on macOS 10.12 Serria because system proxy not allow [file:///](file:///) protocol.
-[Issue 2.]() The net speed is how ever have some problem with macOS 10.12, welcome logs from all users.
-
 ## License
 
 The project is released under the terms of GPLv3.
