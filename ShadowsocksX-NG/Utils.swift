@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import CommonCrypto
 
 extension String {
     var localized: String {
