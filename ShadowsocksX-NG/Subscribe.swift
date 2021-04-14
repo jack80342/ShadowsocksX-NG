@@ -47,7 +47,7 @@ class Subscribe: NSObject{
             let decodeRes = decode64(resString)!
             let ssrregexp = "ssr://([A-Za-z0-9_-]+)"
             let urls = splitor(url: decodeRes, regexp: ssrregexp)
-            let profile = ServerProfile.fromDictionary(ParseAppURLSchemes(URL(string: urls[0])) as [String : AnyObject])
+            let profile = ServerProfile.fromDictionary(ParseAppURLSchemes(URL(string: urls[0]))! as [String : AnyObject])
             self.groupName = profile.ssrGroup
         }
         if newGroupName != "" { return groupName = newGroupName }
