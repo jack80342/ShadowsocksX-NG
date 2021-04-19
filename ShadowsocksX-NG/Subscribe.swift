@@ -47,7 +47,7 @@ class Subscribe: NSObject{
             let decodeRes = decode64(resString)!
             let ssrregexp = "ssr://([A-Za-z0-9_-]+)"
             let urls = splitor(url: decodeRes, regexp: ssrregexp)
-            let profile = ServerProfile.fromDictionary(ParseAppURLSchemes(URL(string: urls[0])) as [String : AnyObject])
+            let profile = ServerProfile.fromDictionary(parseAppURLSchemes(URL(string: urls[0]))! as [String : AnyObject])
             self.groupName = profile.ssrGroup
         }
         if newGroupName != "" { return groupName = newGroupName }
@@ -143,7 +143,7 @@ class Subscribe: NSObject{
             let maxN = (self.maxCount > urls.count) ? urls.count : (self.maxCount == -1) ? urls.count: self.maxCount
             // TODO change the loop into random pick
             for index in 0..<maxN {
-                if let profileDict = ParseAppURLSchemes(URL(string: urls[index])) {
+                if let profileDict = parseAppURLSchemes(URL(string: urls[index])) {
                     let profile = ServerProfile.fromDictionary(profileDict as [String : AnyObject])
                     let (dupResult, _) = self.profileMgr.isDuplicated(profile: profile)
                     let (existResult, existIndex) = self.profileMgr.isExisted(profile: profile)

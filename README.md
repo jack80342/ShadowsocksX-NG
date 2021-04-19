@@ -7,10 +7,10 @@ Next Generation of [ShadowsocksX](https://github.com/shadowsocks/shadowsocks-iOS
 ## Why?
 
 It's hard to maintain the original implement. There are too many unused code in it. 
-It also embed ss-local source. It's crazy to maintain depandences of ss-local. 
+It also embed ss-local source. It's crazy to maintain dependencies of ss-local. 
 So it's hard to update ss-local version.
 
-Now I just copy the ss-local from home brew. Run ss-local executable as a Launch Agent in background. 
+Now I just copy the ss-local from Homebrew. Run ss-local executable as a Launch Agent in background. 
 Serve pac js file as a file url. So there are only some souce code related to GUI left. 
 Then I rewrite the GUI code by swift.
 
@@ -30,7 +30,7 @@ Then I rewrite the GUI code by swift.
 - SSR features!
 - Ability to check update from GitHub.
 - White domain list & white IP list
-- Use ss-local from shadowsocksr-libev 2.5.6
+- Use ss-local from shadowsocks-libev 3.3.5_1
 - Ability to update PAC by download GFW List from GitHub. (You can even customize your list)
 - Ability to update ACL white list from GutHub. (You can even customize your list)
 - Show QRCode for current server profile.
@@ -65,10 +65,6 @@ Then you could configure your apps to use socks5 proxy manual.
 - [ ] 用SwiftUI重写界面
 - [ ] Embed the http proxy server [privoxy](http://www.privoxy.org/), [get it](https://homebrew.bintray.com/bottles/privoxy-3.0.26.sierra.bottle.tar.gz).
 - [ ] ACL mode support [Shadowsocks ACL](https://github.com/shadowsocksr/shadowsocksr-libev/tree/master/acl)
-
-## Know Issue
-Solved [Issue 1.]() Auto PAC & White list is not working on macOS 10.12 Serria because system proxy not allow [file:///](file:///) protocol.
-[Issue 2.]() The net speed is how ever have some problem with macOS 10.12, welcome logs from all users.
 
 ## License
 

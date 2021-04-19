@@ -112,10 +112,10 @@ class SubscribePreferenceWindowController: NSWindowController
         if index >= 0 && index < sbMgr.subscribes.count {
             editingSubscribe = sbMgr.subscribes[index]
             
-            FeedTextField.bind(NSBindingName(rawValue: "value"), to: editingSubscribe, withKeyPath: "subscribeFeed", options: [NSBindingOption.continuouslyUpdatesValue: true])
-            TokenTextField.bind(NSBindingName(rawValue: "value"), to: editingSubscribe, withKeyPath: "token", options: [NSBindingOption.continuouslyUpdatesValue: true])
-            GroupTextField.bind(NSBindingName(rawValue: "value"), to: editingSubscribe, withKeyPath: "groupName", options: [NSBindingOption.continuouslyUpdatesValue: true])
-            MaxCountTextField.bind(NSBindingName(rawValue: "value"), to: editingSubscribe, withKeyPath: "maxCount", options: [NSBindingOption.continuouslyUpdatesValue: true])
+            FeedTextField.bind(NSBindingName(rawValue: "value"), to: editingSubscribe!, withKeyPath: "subscribeFeed", options: [NSBindingOption.continuouslyUpdatesValue: true])
+            TokenTextField.bind(NSBindingName(rawValue: "value"), to: editingSubscribe!, withKeyPath: "token", options: [NSBindingOption.continuouslyUpdatesValue: true])
+            GroupTextField.bind(NSBindingName(rawValue: "value"), to: editingSubscribe!, withKeyPath: "groupName", options: [NSBindingOption.continuouslyUpdatesValue: true])
+            MaxCountTextField.bind(NSBindingName(rawValue: "value"), to: editingSubscribe!, withKeyPath: "maxCount", options: [NSBindingOption.continuouslyUpdatesValue: true])
             
         } else {
             editingSubscribe = nil

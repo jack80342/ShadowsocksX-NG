@@ -153,7 +153,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
                 var isChanged = false
 
                 for url in urls {
-                    let profielDict = ParseAppURLSchemes(url)//ParseSSURL(url)
+                    let profielDict = parseAppURLSchemes(url)//ParseSSURL(url)
                     if let profielDict = profielDict {
                         let profile = ServerProfile.fromDictionary(profielDict as [String: AnyObject])
                         mgr.profiles.append(profile)
@@ -350,7 +350,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     }
 
     @IBAction func scanQRCodeFromScreen(_ sender: NSMenuItem) {
-        ScanQRCodeOnScreen()
+        scanQRCodeOnScreen()
     }
 
     @IBAction func showBunchJsonExampleFile(_ sender: NSMenuItem) {

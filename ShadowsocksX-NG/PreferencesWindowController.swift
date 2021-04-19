@@ -223,27 +223,27 @@ class PreferencesWindowController: NSWindowController
         if index >= 0 && index < profileMgr.profiles.count {
             editingProfile = profileMgr.profiles[index]
             
-            hostTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile, withKeyPath: "serverHost"
+            hostTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile!, withKeyPath: "serverHost"
                                , options: [NSBindingOption.continuouslyUpdatesValue: true])
-            portTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile, withKeyPath: "serverPort"
+            portTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile!, withKeyPath: "serverPort"
                                , options: [NSBindingOption.continuouslyUpdatesValue: true])
             
-            methodTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile, withKeyPath: "method"
+            methodTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile!, withKeyPath: "method"
                                  , options: [NSBindingOption.continuouslyUpdatesValue: true])
-            passwordTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile, withKeyPath: "password"
+            passwordTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile!, withKeyPath: "password"
                                    , options: [NSBindingOption.continuouslyUpdatesValue: true])
             
-            remarkTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile, withKeyPath: "remark"
+            remarkTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile!, withKeyPath: "remark"
                                  , options: [NSBindingOption.continuouslyUpdatesValue: true])
             
-            ProtocolTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile, withKeyPath: "ssrProtocol", options: [NSBindingOption.continuouslyUpdatesValue: true])
+            ProtocolTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile!, withKeyPath: "ssrProtocol", options: [NSBindingOption.continuouslyUpdatesValue: true])
             
-            ProtocolParamTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile, withKeyPath: "ssrProtocolParam", options: [NSBindingOption.continuouslyUpdatesValue: true])
+            ProtocolParamTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile!, withKeyPath: "ssrProtocolParam", options: [NSBindingOption.continuouslyUpdatesValue: true])
             
-            ObfsTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile, withKeyPath: "ssrObfs", options: [NSBindingOption.continuouslyUpdatesValue: true])
+            ObfsTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile!, withKeyPath: "ssrObfs", options: [NSBindingOption.continuouslyUpdatesValue: true])
             
-            ObfsParamTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile, withKeyPath: "ssrObfsParam", options: [NSBindingOption.continuouslyUpdatesValue: true])
-            groupTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile, withKeyPath: "ssrGroup", options: [NSBindingOption.continuouslyUpdatesValue: true])
+            ObfsParamTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile!, withKeyPath: "ssrObfsParam", options: [NSBindingOption.continuouslyUpdatesValue: true])
+            groupTextField.bind(NSBindingName(rawValue: "value"), to: editingProfile!, withKeyPath: "ssrGroup", options: [NSBindingOption.continuouslyUpdatesValue: true])
             
         } else {
             editingProfile = nil
