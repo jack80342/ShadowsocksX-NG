@@ -24,6 +24,7 @@
 		08F162C01EBEE6F800C52869 /* backchn.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162BF1EBEE6F800C52869 /* backchn.acl */; };
 		08F162C21EBEEC0F00C52869 /* gfwlist.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162C11EBEEC0F00C52869 /* gfwlist.acl */; };
 		092A90F32625E0F1007CA9CA /* SWBApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A90F22625E0F1007CA9CA /* SWBApplication.swift */; };
+		0948A8CF26288D090060D4AA /* QRCodeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0948A8CE26288D090060D4AA /* QRCodeUtils.swift */; };
 		094A892F26248D4C00394747 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 094A892E26248D4C00394747 /* LaunchAtLogin */; };
 		09666027261D4BC10022C66C /* privoxy in Resources */ = {isa = PBXBuildFile; fileRef = C6D4298F1DA75988002A5711 /* privoxy */; };
 		0966602E261D51580022C66C /* libcrypto.1.0.0.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 09F9DCD1261CC452006CA4B9 /* libcrypto.1.0.0.dylib */; };
@@ -43,7 +44,6 @@
 		9B2491B71D0ACC3E003BBECC /* AdvPreferencesWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2491B91D0ACC3E003BBECC /* AdvPreferencesWindowController.xib */; };
 		9B3FFF0D1D05FEB30019A709 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3FFF0C1D05FEB30019A709 /* Utils.swift */; };
 		9B3FFF141D0705810019A709 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3FFF131D0705810019A709 /* Notifications.swift */; };
-		9B3FFF1E1D0732660019A709 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3FFF1D1D0732660019A709 /* Utils.m */; };
 		9B3FFF211D08826E0019A709 /* PACUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3FFF201D08826E0019A709 /* PACUtils.swift */; };
 		9B3FFF231D088E8D0019A709 /* abp.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B3FFF221D088E8D0019A709 /* abp.js */; };
 		9B3FFF271D0898EB0019A709 /* gfwlist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9B3FFF261D0898EB0019A709 /* gfwlist.txt */; };
@@ -131,6 +131,7 @@
 		08F162BF1EBEE6F800C52869 /* backchn.acl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = backchn.acl; sourceTree = "<group>"; };
 		08F162C11EBEEC0F00C52869 /* gfwlist.acl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gfwlist.acl; sourceTree = "<group>"; };
 		092A90F22625E0F1007CA9CA /* SWBApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBApplication.swift; sourceTree = "<group>"; };
+		0948A8CE26288D090060D4AA /* QRCodeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeUtils.swift; sourceTree = "<group>"; };
 		094A892626248C8300394747 /* ShadowsocksX-NG-RRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ShadowsocksX-NG-RRelease.entitlements"; sourceTree = "<group>"; };
 		09F9DCD1261CC452006CA4B9 /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
 		19083CFCED87354F006967FF /* Pods_ShadowsocksX_NGUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShadowsocksX_NGUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,8 +164,6 @@
 		9B2491B81D0ACC3E003BBECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AdvPreferencesWindowController.xib; sourceTree = "<group>"; };
 		9B3FFF0C1D05FEB30019A709 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9B3FFF131D0705810019A709 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
-		9B3FFF1D1D0732660019A709 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
-		9B3FFF1F1D0734060019A709 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		9B3FFF201D08826E0019A709 /* PACUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PACUtils.swift; sourceTree = "<group>"; };
 		9B3FFF221D088E8D0019A709 /* abp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = abp.js; sourceTree = "<group>"; };
 		9B3FFF261D0898EB0019A709 /* gfwlist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gfwlist.txt; sourceTree = "<group>"; };
@@ -343,14 +342,13 @@
 				083BF8341D82742200831C68 /* NetWorkMonitor.swift */,
 				083BF8351D82742200831C68 /* PingClient.swift */,
 				9B3FFF131D0705810019A709 /* Notifications.swift */,
-				9B3FFF1D1D0732660019A709 /* Utils.m */,
-				9B3FFF1F1D0734060019A709 /* Utils.h */,
 				9B3FFF4D1D09D9D50019A709 /* ProxyConfHelper.h */,
 				9B3FFF4E1D09D9D50019A709 /* ProxyConfHelper.m */,
 				9B3FFF501D09DAEA0019A709 /* proxy_conf_helper_version.h */,
 				9BA04B211D23D5A5005AAD7F /* ProxyConfTool.h */,
 				9BA04B221D23D5A5005AAD7F /* ProxyConfTool.m */,
 				092A90F22625E0F1007CA9CA /* SWBApplication.swift */,
+				0948A8CE26288D090060D4AA /* QRCodeUtils.swift */,
 			);
 			path = "ShadowsocksX-NG";
 			sourceTree = "<group>";
@@ -681,7 +679,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B3FFF4F1D09D9D50019A709 /* ProxyConfHelper.m in Sources */,
-				9B3FFF1E1D0732660019A709 /* Utils.m in Sources */,
 				9B3FFF321D08CEE40019A709 /* SWBQRCodeWindowController.m in Sources */,
 				08BDBB481E2361BD00C4BBC2 /* VersionChecker.swift in Sources */,
 				083BF8371D82742200831C68 /* PingClient.swift in Sources */,
@@ -697,6 +694,7 @@
 				083BF8391D82759600831C68 /* StatusItemView.swift in Sources */,
 				9BEEF06E1D04DCE400FC52B3 /* ServerProfile.swift in Sources */,
 				083BF83B1D8275A800831C68 /* SystemThemeChangeHelper.swift in Sources */,
+				0948A8CF26288D090060D4AA /* QRCodeUtils.swift in Sources */,
 				9B3FFF0D1D05FEB30019A709 /* Utils.swift in Sources */,
 				9BEEF0751D04EF3E00FC52B3 /* PreferencesWindowController.swift in Sources */,
 				9B0BFFE91D0460A70040E62B /* AppDelegate.swift in Sources */,
