@@ -61,6 +61,7 @@ Then you could configure your apps to use socks5 proxy manual.
 
 
 ## TODO List
+- [ ] 用nettop替换掉sar，重写显示网速功能
 - [ ] 用Swift重写剩余的OC代码
 - [ ] 用SwiftUI重写界面
 - [ ] Embed the http proxy server [privoxy](http://www.privoxy.org/), [get it](https://homebrew.bintray.com/bottles/privoxy-3.0.26.sierra.bottle.tar.gz).
