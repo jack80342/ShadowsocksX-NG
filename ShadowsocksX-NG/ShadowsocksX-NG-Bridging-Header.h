@@ -3,5 +3,4 @@
 //
 
 #import "SWBQRCodeWindowController.h"
-#import "ProxyConfHelper.h"
 #import "ProxyConfTool.h"
