@@ -25,7 +25,7 @@ Then I rewrite the GUI code by swift.
 - Xcode 12.4+
 - cocoapod 1.10.1+
 
-## Fetures
+## Features
 
 - SSR features!
 - Ability to check update from GitHub.
