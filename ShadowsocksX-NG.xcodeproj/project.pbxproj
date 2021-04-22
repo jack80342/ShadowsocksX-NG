@@ -30,6 +30,7 @@
 		0966602E261D51580022C66C /* libcrypto.1.0.0.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 09F9DCD1261CC452006CA4B9 /* libcrypto.1.0.0.dylib */; };
 		099C07EE26249E6300D6FD67 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 099C07ED26249E6300D6FD67 /* Alamofire */; };
 		09AB0C26262F0485008E57C1 /* ProxyConfHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB0C25262F0485008E57C1 /* ProxyConfHelper.swift */; };
+		09AB0C2E262F298A008E57C1 /* ProxyConfHelperVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB0C2D262F298A008E57C1 /* ProxyConfHelperVersion.swift */; };
 		1F94B2D84433EFEBF9FAE5D0 /* Pods_ShadowsocksX_NG_R.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF6A36F1612D98DC91EF19A /* Pods_ShadowsocksX_NG_R.framework */; };
 		9B07EFA71D048BBB0052D9DF /* ss-local in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA61D048BBB0052D9DF /* ss-local */; };
 		9B07EFAC1D048E880052D9DF /* menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA81D048E880052D9DF /* menu_icon@2x.png */; };
@@ -134,6 +135,7 @@
 		0948A8CE26288D090060D4AA /* QRCodeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeUtils.swift; sourceTree = "<group>"; };
 		094A892626248C8300394747 /* ShadowsocksX-NG-RRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ShadowsocksX-NG-RRelease.entitlements"; sourceTree = "<group>"; };
 		09AB0C25262F0485008E57C1 /* ProxyConfHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfHelper.swift; sourceTree = "<group>"; };
+		09AB0C2D262F298A008E57C1 /* ProxyConfHelperVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfHelperVersion.swift; sourceTree = "<group>"; };
 		09F9DCD1261CC452006CA4B9 /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
 		19083CFCED87354F006967FF /* Pods_ShadowsocksX_NGUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShadowsocksX_NGUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7783AEDB4A3BDDC9FF16AC /* libPods-proxy_conf_helper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-proxy_conf_helper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -345,6 +347,7 @@
 				092A90F22625E0F1007CA9CA /* SWBApplication.swift */,
 				0948A8CE26288D090060D4AA /* QRCodeUtils.swift */,
 				09AB0C25262F0485008E57C1 /* ProxyConfHelper.swift */,
+				09AB0C2D262F298A008E57C1 /* ProxyConfHelperVersion.swift */,
 			);
 			path = "ShadowsocksX-NG";
 			sourceTree = "<group>";
@@ -683,6 +686,7 @@
 				9B3FFF141D0705810019A709 /* Notifications.swift in Sources */,
 				09AB0C26262F0485008E57C1 /* ProxyConfHelper.swift in Sources */,
 				9BEEF0701D04DDB100FC52B3 /* ServerProfileManager.swift in Sources */,
+				09AB0C2E262F298A008E57C1 /* ProxyConfHelperVersion.swift in Sources */,
 				08635C771EF750FA00F1D25E /* SubscribeManager.swift in Sources */,
 				0877D6571EF1E82400126865 /* SubscribePreferenceWindowController.swift in Sources */,
 				0877D6541EF1E65600126865 /* Subscribe.swift in Sources */,

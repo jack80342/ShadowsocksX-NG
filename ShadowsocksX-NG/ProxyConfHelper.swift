@@ -11,7 +11,6 @@ import GCDWebServer
 class ProxyConfHelper {
 
     let kShadowsocksHelper = "/Library/Application Support/ShadowsocksX-NG-R/proxy_conf_helper"
-    let kProxyConfHelperVersion = "1.3.2"
 
     var webServer: GCDWebServer? = nil
 
@@ -225,6 +224,7 @@ class ProxyConfHelper {
     func stopPACServer() {
         if ((webServer?.isRunning) != nil) {
             webServer?.stop()
+            webServer = nil
         }
     }
 }

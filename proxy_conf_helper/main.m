@@ -10,7 +10,6 @@
 
 #import <Foundation/Foundation.h>
 #import <SystemConfiguration/SystemConfiguration.h>
-#import "../ShadowsocksX-NG/proxy_conf_helper_version.h"
 
 // A library for parsing command line.
 // https://github.com/stephencelis/BRLOptionParser
@@ -23,6 +22,9 @@ int main(int argc, const char * argv[])
     NSString* pacURL;
     NSString* portString;
     NSString* privoxyPortString;
+    
+    // 暂时定义，之后改用ProxyConfHelperVersion里的kProxyConfHelperVersion
+    NSString* kProxyConfHelperVersion = @"1.3.2";
     
     BRLOptionParser *options = [BRLOptionParser new];
     [options setBanner:@"Usage: %s [-v] [-m auto|global|off] [-u <url>] [-p <port>] [-r <port>]", argv[0]];
