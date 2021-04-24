@@ -31,6 +31,7 @@
 		099C07EE26249E6300D6FD67 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 099C07ED26249E6300D6FD67 /* Alamofire */; };
 		09AB0C26262F0485008E57C1 /* ProxyConfHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB0C25262F0485008E57C1 /* ProxyConfHelper.swift */; };
 		09AB0C2E262F298A008E57C1 /* ProxyConfHelperVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB0C2D262F298A008E57C1 /* ProxyConfHelperVersion.swift */; };
+		09C3968C26345B0B009C2C99 /* ProxyConfTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3968B26345B0B009C2C99 /* ProxyConfTool.swift */; };
 		1F94B2D84433EFEBF9FAE5D0 /* Pods_ShadowsocksX_NG_R.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF6A36F1612D98DC91EF19A /* Pods_ShadowsocksX_NG_R.framework */; };
 		9B07EFA71D048BBB0052D9DF /* ss-local in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA61D048BBB0052D9DF /* ss-local */; };
 		9B07EFAC1D048E880052D9DF /* menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA81D048E880052D9DF /* menu_icon@2x.png */; };
@@ -56,7 +57,6 @@
 		9B3FFF471D09CD3B0019A709 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3FFF461D09CD3B0019A709 /* main.m */; };
 		9B3FFF4C1D09D8F70019A709 /* install_helper.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9B3FFF4B1D09D8F70019A709 /* install_helper.sh */; };
 		9B3FFF541D09E2D10019A709 /* proxy_conf_helper in Resources */ = {isa = PBXBuildFile; fileRef = 9B3FFF441D09CD3B0019A709 /* proxy_conf_helper */; };
-		9BA04B231D23D5A5005AAD7F /* ProxyConfTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA04B221D23D5A5005AAD7F /* ProxyConfTool.m */; };
 		9BA04B261D24044D005AAD7F /* ProxyPreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA04B241D24044D005AAD7F /* ProxyPreferencesController.swift */; };
 		9BC70EDC1D2E3E3100EDA4CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B172A6C1D0ADDDD00B87B9A /* Localizable.strings */; };
 		9BEEF0691D04D4D500FC52B3 /* install_ss_local.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9BEEF0651D04CB8500FC52B3 /* install_ss_local.sh */; };
@@ -136,6 +136,7 @@
 		094A892626248C8300394747 /* ShadowsocksX-NG-RRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ShadowsocksX-NG-RRelease.entitlements"; sourceTree = "<group>"; };
 		09AB0C25262F0485008E57C1 /* ProxyConfHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfHelper.swift; sourceTree = "<group>"; };
 		09AB0C2D262F298A008E57C1 /* ProxyConfHelperVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfHelperVersion.swift; sourceTree = "<group>"; };
+		09C3968B26345B0B009C2C99 /* ProxyConfTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfTool.swift; sourceTree = "<group>"; };
 		09F9DCD1261CC452006CA4B9 /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
 		19083CFCED87354F006967FF /* Pods_ShadowsocksX_NGUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShadowsocksX_NGUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7783AEDB4A3BDDC9FF16AC /* libPods-proxy_conf_helper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-proxy_conf_helper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,8 +181,6 @@
 		9B3FFF461D09CD3B0019A709 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B3FFF4B1D09D8F70019A709 /* install_helper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install_helper.sh; sourceTree = "<group>"; };
 		9B3FFF511D09DBA20019A709 /* ShadowsocksX-NG-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShadowsocksX-NG-Bridging-Header.h"; sourceTree = "<group>"; };
-		9BA04B211D23D5A5005AAD7F /* ProxyConfTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProxyConfTool.h; sourceTree = "<group>"; };
-		9BA04B221D23D5A5005AAD7F /* ProxyConfTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProxyConfTool.m; sourceTree = "<group>"; };
 		9BA04B241D24044D005AAD7F /* ProxyPreferencesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyPreferencesController.swift; sourceTree = "<group>"; };
 		9BEEF0651D04CB8500FC52B3 /* install_ss_local.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install_ss_local.sh; sourceTree = "<group>"; };
 		9BEEF0661D04CE8D00FC52B3 /* start_ss_local.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = start_ss_local.sh; sourceTree = "<group>"; };
@@ -331,6 +330,7 @@
 				9B0BFFEF1D0460A70040E62B /* Info.plist */,
 				9BEEF06D1D04DCE400FC52B3 /* ServerProfile.swift */,
 				9BEEF06F1D04DDB100FC52B3 /* ServerProfileManager.swift */,
+				09C3968B26345B0B009C2C99 /* ProxyConfTool.swift */,
 				0877D6531EF1E65600126865 /* Subscribe.swift */,
 				08635C761EF750FA00F1D25E /* SubscribeManager.swift */,
 				08BDBB471E2361BD00C4BBC2 /* VersionChecker.swift */,
@@ -342,8 +342,6 @@
 				083BF8341D82742200831C68 /* NetWorkMonitor.swift */,
 				083BF8351D82742200831C68 /* PingClient.swift */,
 				9B3FFF131D0705810019A709 /* Notifications.swift */,
-				9BA04B211D23D5A5005AAD7F /* ProxyConfTool.h */,
-				9BA04B221D23D5A5005AAD7F /* ProxyConfTool.m */,
 				092A90F22625E0F1007CA9CA /* SWBApplication.swift */,
 				0948A8CE26288D090060D4AA /* QRCodeUtils.swift */,
 				09AB0C25262F0485008E57C1 /* ProxyConfHelper.swift */,
@@ -682,6 +680,7 @@
 				083BF8371D82742200831C68 /* PingClient.swift in Sources */,
 				083BF8361D82742200831C68 /* NetWorkMonitor.swift in Sources */,
 				9B3FFF211D08826E0019A709 /* PACUtils.swift in Sources */,
+				09C3968C26345B0B009C2C99 /* ProxyConfTool.swift in Sources */,
 				9BA04B261D24044D005AAD7F /* ProxyPreferencesController.swift in Sources */,
 				9B3FFF141D0705810019A709 /* Notifications.swift in Sources */,
 				09AB0C26262F0485008E57C1 /* ProxyConfHelper.swift in Sources */,
@@ -698,7 +697,6 @@
 				9B3FFF0D1D05FEB30019A709 /* Utils.swift in Sources */,
 				9BEEF0751D04EF3E00FC52B3 /* PreferencesWindowController.swift in Sources */,
 				9B0BFFE91D0460A70040E62B /* AppDelegate.swift in Sources */,
-				9BA04B231D23D5A5005AAD7F /* ProxyConfTool.m in Sources */,
 				9BEEF0781D04FE8A00FC52B3 /* LaunchAgentUtils.swift in Sources */,
 				C6E28E921DA79380004F8330 /* HTTPPreferencesWindowController.swift in Sources */,
 				092A90F32625E0F1007CA9CA /* SWBApplication.swift in Sources */,

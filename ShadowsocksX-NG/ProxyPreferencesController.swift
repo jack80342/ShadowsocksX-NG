@@ -17,6 +17,7 @@ class ProxyPreferencesController: NSWindowController, NSTableViewDataSource, NST
     var selectedNetworkServices: NSMutableSet!
     var autoConfigureNetworkServices: Bool = true
     var proxyConfHelper: ProxyConfHelper = ProxyConfHelper()
+    var proxyConfTool: ProxyConfTool = ProxyConfTool()
 
     override func windowDidLoad() {
         super.windowDidLoad()
@@ -31,7 +32,7 @@ class ProxyPreferencesController: NSWindowController, NSTableViewDataSource, NST
             selectedNetworkServices = NSMutableSet()
         }
         
-        networkServices = ProxyConfTool.networkServicesList() as NSArray
+        networkServices = proxyConfTool.networkServicesList()
         tableView.reloadData()
     }
     
