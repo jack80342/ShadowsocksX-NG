@@ -5,6 +5,8 @@
 //  Created by 钟增强 on 2021/4/13.
 //
 
+import Cocoa
+
 @objc(SWBApplication)
 class SWBApplication: NSApplication {
     open override func sendEvent(_ event: NSEvent) {

@@ -6,8 +6,7 @@
 //  Copyright © 2016年 qiuyuzhou. All rights reserved.
 //
 
-
-import Foundation
+import Cocoa
 
 fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
   switch (lhs, rhs) {
@@ -22,8 +21,6 @@ fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 
 
 public typealias SimplePingClientCallback = (String?)->()
-
-
 
 
 class PingServers:NSObject{

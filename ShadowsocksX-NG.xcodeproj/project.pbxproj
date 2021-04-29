@@ -23,11 +23,13 @@
 		08F162BE1EBEDF0100C52869 /* chn.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162BD1EBEDF0100C52869 /* chn.acl */; };
 		08F162C01EBEE6F800C52869 /* backchn.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162BF1EBEE6F800C52869 /* backchn.acl */; };
 		08F162C21EBEEC0F00C52869 /* gfwlist.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162C11EBEEC0F00C52869 /* gfwlist.acl */; };
+		090294792639B2CC00FAC817 /* SWBQRCodeWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090294782639B2CC00FAC817 /* SWBQRCodeWindowController.swift */; };
 		092A90F32625E0F1007CA9CA /* SWBApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A90F22625E0F1007CA9CA /* SWBApplication.swift */; };
 		0948A8CF26288D090060D4AA /* QRCodeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0948A8CE26288D090060D4AA /* QRCodeUtils.swift */; };
 		094A892F26248D4C00394747 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 094A892E26248D4C00394747 /* LaunchAtLogin */; };
 		09666027261D4BC10022C66C /* privoxy in Resources */ = {isa = PBXBuildFile; fileRef = C6D4298F1DA75988002A5711 /* privoxy */; };
 		0966602E261D51580022C66C /* libcrypto.1.0.0.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 09F9DCD1261CC452006CA4B9 /* libcrypto.1.0.0.dylib */; };
+		0984E978263AFDF400A79681 /* SWBQRCodeWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0984E97A263AFDF400A79681 /* SWBQRCodeWindowController.xib */; };
 		099C07EE26249E6300D6FD67 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 099C07ED26249E6300D6FD67 /* Alamofire */; };
 		09AB0C26262F0485008E57C1 /* ProxyConfHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB0C25262F0485008E57C1 /* ProxyConfHelper.swift */; };
 		09AB0C2E262F298A008E57C1 /* ProxyConfHelperVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB0C2D262F298A008E57C1 /* ProxyConfHelperVersion.swift */; };
@@ -51,8 +53,6 @@
 		9B3FFF231D088E8D0019A709 /* abp.js in Resources */ = {isa = PBXBuildFile; fileRef = 9B3FFF221D088E8D0019A709 /* abp.js */; };
 		9B3FFF271D0898EB0019A709 /* gfwlist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9B3FFF261D0898EB0019A709 /* gfwlist.txt */; };
 		9B3FFF291D08A1DF0019A709 /* user-rule.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9B3FFF281D08A1DF0019A709 /* user-rule.txt */; };
-		9B3FFF321D08CEE40019A709 /* SWBQRCodeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3FFF311D08CEE40019A709 /* SWBQRCodeWindowController.m */; };
-		9B3FFF341D08CEF70019A709 /* SWBQRCodeWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B3FFF331D08CEF70019A709 /* SWBQRCodeWindowController.xib */; };
 		9B3FFF3E1D08D9910019A709 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3FFF3D1D08D9910019A709 /* SystemConfiguration.framework */; };
 		9B3FFF471D09CD3B0019A709 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3FFF461D09CD3B0019A709 /* main.m */; };
 		9B3FFF4C1D09D8F70019A709 /* install_helper.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9B3FFF4B1D09D8F70019A709 /* install_helper.sh */; };
@@ -131,9 +131,12 @@
 		08F162BD1EBEDF0100C52869 /* chn.acl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chn.acl; sourceTree = "<group>"; };
 		08F162BF1EBEE6F800C52869 /* backchn.acl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = backchn.acl; sourceTree = "<group>"; };
 		08F162C11EBEEC0F00C52869 /* gfwlist.acl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gfwlist.acl; sourceTree = "<group>"; };
+		090294782639B2CC00FAC817 /* SWBQRCodeWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBQRCodeWindowController.swift; sourceTree = "<group>"; };
 		092A90F22625E0F1007CA9CA /* SWBApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBApplication.swift; sourceTree = "<group>"; };
 		0948A8CE26288D090060D4AA /* QRCodeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeUtils.swift; sourceTree = "<group>"; };
 		094A892626248C8300394747 /* ShadowsocksX-NG-RRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ShadowsocksX-NG-RRelease.entitlements"; sourceTree = "<group>"; };
+		0984E979263AFDF400A79681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SWBQRCodeWindowController.xib; sourceTree = "<group>"; };
+		0984E97F263AFDF800A79681 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SWBQRCodeWindowController.strings"; sourceTree = "<group>"; };
 		09AB0C25262F0485008E57C1 /* ProxyConfHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfHelper.swift; sourceTree = "<group>"; };
 		09AB0C2D262F298A008E57C1 /* ProxyConfHelperVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfHelperVersion.swift; sourceTree = "<group>"; };
 		09C3968B26345B0B009C2C99 /* ProxyConfTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfTool.swift; sourceTree = "<group>"; };
@@ -172,15 +175,11 @@
 		9B3FFF221D088E8D0019A709 /* abp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = abp.js; sourceTree = "<group>"; };
 		9B3FFF261D0898EB0019A709 /* gfwlist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gfwlist.txt; sourceTree = "<group>"; };
 		9B3FFF281D08A1DF0019A709 /* user-rule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "user-rule.txt"; sourceTree = "<group>"; };
-		9B3FFF301D08CEE40019A709 /* SWBQRCodeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBQRCodeWindowController.h; sourceTree = "<group>"; };
-		9B3FFF311D08CEE40019A709 /* SWBQRCodeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBQRCodeWindowController.m; sourceTree = "<group>"; };
-		9B3FFF331D08CEF70019A709 /* SWBQRCodeWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWBQRCodeWindowController.xib; sourceTree = "<group>"; };
 		9B3FFF3B1D08D93B0019A709 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		9B3FFF3D1D08D9910019A709 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9B3FFF441D09CD3B0019A709 /* proxy_conf_helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = proxy_conf_helper; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3FFF461D09CD3B0019A709 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B3FFF4B1D09D8F70019A709 /* install_helper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install_helper.sh; sourceTree = "<group>"; };
-		9B3FFF511D09DBA20019A709 /* ShadowsocksX-NG-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShadowsocksX-NG-Bridging-Header.h"; sourceTree = "<group>"; };
 		9BA04B241D24044D005AAD7F /* ProxyPreferencesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyPreferencesController.swift; sourceTree = "<group>"; };
 		9BEEF0651D04CB8500FC52B3 /* install_ss_local.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install_ss_local.sh; sourceTree = "<group>"; };
 		9BEEF0661D04CE8D00FC52B3 /* start_ss_local.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = start_ss_local.sh; sourceTree = "<group>"; };
@@ -321,7 +320,6 @@
 		9B0BFFE71D0460A70040E62B /* ShadowsocksX-NG */ = {
 			isa = PBXGroup;
 			children = (
-				9B3FFF511D09DBA20019A709 /* ShadowsocksX-NG-Bridging-Header.h */,
 				9B3FFF0B1D05D8B80019A709 /* UI */,
 				9B07EFB01D048E900052D9DF /* Support Files */,
 				9B0BFFE81D0460A70040E62B /* AppDelegate.swift */,
@@ -362,9 +360,7 @@
 		9B3FFF0B1D05D8B80019A709 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				9B3FFF331D08CEF70019A709 /* SWBQRCodeWindowController.xib */,
-				9B3FFF301D08CEE40019A709 /* SWBQRCodeWindowController.h */,
-				9B3FFF311D08CEE40019A709 /* SWBQRCodeWindowController.m */,
+				0984E97A263AFDF400A79681 /* SWBQRCodeWindowController.xib */,
 				0877D6551EF1E82400126865 /* SubscribePreferenceWindowController.swift */,
 				086A31471F1AF797004C7285 /* SubscribePreferenceWindowController.xib */,
 				9BEEF0731D04EF3E00FC52B3 /* PreferencesWindowController.swift */,
@@ -377,6 +373,7 @@
 				C8E42A701D4F2CAF0074C7EA /* UserRulesController.xib */,
 				C6E28E911DA79380004F8330 /* HTTPPreferencesWindowController.swift */,
 				C6E28E971DA79705004F8330 /* HTTPPreferencesWindowController.xib */,
+				090294782639B2CC00FAC817 /* SWBQRCodeWindowController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -543,7 +540,7 @@
 				C6D429991DA76FBC002A5711 /* privoxy.config.example in Resources */,
 				0880CE401D6FE6D900BD39E2 /* example-gui-config.json in Resources */,
 				9BEEF06B1D04D4D500FC52B3 /* stop_ss_local.sh in Resources */,
-				9B3FFF341D08CEF70019A709 /* SWBQRCodeWindowController.xib in Resources */,
+				0984E978263AFDF400A79681 /* SWBQRCodeWindowController.xib in Resources */,
 				09666027261D4BC10022C66C /* privoxy in Resources */,
 				9BEEF06C1D04D4D500FC52B3 /* reload_conf_ss_local.sh in Resources */,
 				9B3FFF231D088E8D0019A709 /* abp.js in Resources */,
@@ -675,7 +672,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B3FFF321D08CEE40019A709 /* SWBQRCodeWindowController.m in Sources */,
 				08BDBB481E2361BD00C4BBC2 /* VersionChecker.swift in Sources */,
 				083BF8371D82742200831C68 /* PingClient.swift in Sources */,
 				083BF8361D82742200831C68 /* NetWorkMonitor.swift in Sources */,
@@ -692,6 +688,7 @@
 				9BEEF07B1D05631500FC52B3 /* AdvPreferencesWindowController.swift in Sources */,
 				083BF8391D82759600831C68 /* StatusItemView.swift in Sources */,
 				9BEEF06E1D04DCE400FC52B3 /* ServerProfile.swift in Sources */,
+				090294792639B2CC00FAC817 /* SWBQRCodeWindowController.swift in Sources */,
 				083BF83B1D8275A800831C68 /* SystemThemeChangeHelper.swift in Sources */,
 				0948A8CF26288D090060D4AA /* QRCodeUtils.swift in Sources */,
 				9B3FFF0D1D05FEB30019A709 /* Utils.swift in Sources */,
@@ -743,6 +740,15 @@
 				086A31491F1AF799004C7285 /* zh-Hans */,
 			);
 			name = SubscribePreferenceWindowController.xib;
+			sourceTree = "<group>";
+		};
+		0984E97A263AFDF400A79681 /* SWBQRCodeWindowController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0984E979263AFDF400A79681 /* Base */,
+				0984E97F263AFDF800A79681 /* zh-Hans */,
+			);
+			name = SWBQRCodeWindowController.xib;
 			sourceTree = "<group>";
 		};
 		9B0BFFEC1D0460A70040E62B /* MainMenu.xib */ = {
@@ -948,7 +954,7 @@
 				MARKETING_VERSION = 1.5.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG-R";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ShadowsocksX-NG/ShadowsocksX-NG-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -982,7 +988,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG-R";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ShadowsocksX-NG/ShadowsocksX-NG-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

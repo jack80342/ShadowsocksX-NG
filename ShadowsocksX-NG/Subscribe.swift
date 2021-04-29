@@ -6,7 +6,7 @@
 //  Copyright © 2017年 qiuyuzhou. All rights reserved.
 //
 
-import Foundation
+import Cocoa
 import Alamofire
 
 class Subscribe: NSObject{

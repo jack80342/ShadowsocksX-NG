@@ -8,8 +8,6 @@
 
 import Cocoa
 
-
-
 class ServerProfile: NSObject {
     var uuid: String
 
