@@ -6,7 +6,7 @@
 //  Copyright © 2017年 qinyuhang. All rights reserved.
 //
 
-import Foundation
+import Cocoa
 import Alamofire
 
 let LATEST_RELEASE_URL = "https://api.github.com/repos/jack80342/ShadowsocksX-NG-R/releases/latest"

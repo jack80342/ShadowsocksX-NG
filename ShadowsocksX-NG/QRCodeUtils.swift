@@ -5,7 +5,7 @@
 //  Created by 钟增强 on 2021/4/15.
 //
 
-import Foundation
+import Cocoa
 
 func scanQRCodeOnScreen() {
 

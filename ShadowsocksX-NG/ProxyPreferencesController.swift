@@ -10,14 +10,14 @@ import Cocoa
 
 class ProxyPreferencesController: NSWindowController, NSTableViewDataSource, NSTableViewDelegate {
     
+    @IBOutlet var autoConfigCheckBox: NSButton!
+    @IBOutlet var tableView: NSTableView!
+
     var networkServices: NSArray!
     var selectedNetworkServices: NSMutableSet!
-    
     var autoConfigureNetworkServices: Bool = true
-    
-    @IBOutlet var autoConfigCheckBox: NSButton!
-    
-    @IBOutlet var tableView: NSTableView!
+    var proxyConfHelper: ProxyConfHelper = ProxyConfHelper()
+    var proxyConfTool: ProxyConfTool = ProxyConfTool()
 
     override func windowDidLoad() {
         super.windowDidLoad()
@@ -32,12 +32,12 @@ class ProxyPreferencesController: NSWindowController, NSTableViewDataSource, NST
             selectedNetworkServices = NSMutableSet()
         }
         
-        networkServices = ProxyConfTool.networkServicesList() as NSArray
+        networkServices = proxyConfTool.networkServicesList()
         tableView.reloadData()
     }
     
     @IBAction func ok(_ sender: NSObject){
-        ProxyConfHelper.disableProxy("hi")
+        proxyConfHelper.disableProxy("hi")
         
         let defaults = UserDefaults.standard
         defaults.setValue(selectedNetworkServices.allObjects, forKeyPath: "Proxy4NetworkServices")

@@ -25,7 +25,7 @@ Then I rewrite the GUI code by swift.
 - Xcode 12.4+
 - cocoapod 1.10.1+
 
-## Fetures
+## Features
 
 - SSR features!
 - Ability to check update from GitHub.
@@ -51,7 +51,7 @@ Then I rewrite the GUI code by swift.
 - Could reorder shadowsocks profiles by drag & drop in servers preferences panel.
 - Auto check update (unable to auto download)
 
-## Different from orignal ShadowsocksX
+## Different from original ShadowsocksX
 
 Run ss-local as backgroud service through launchd, not in app process.
 So after you quit the app, the ss-local maybe is still running. 
@@ -61,6 +61,7 @@ Then you could configure your apps to use socks5 proxy manual.
 
 
 ## TODO List
+- [ ] 用nettop替换掉sar，重写显示网速功能
 - [ ] 用Swift重写剩余的OC代码
 - [ ] 用SwiftUI重写界面
 - [ ] Embed the http proxy server [privoxy](http://www.privoxy.org/), [get it](https://homebrew.bintray.com/bottles/privoxy-3.0.26.sierra.bottle.tar.gz).

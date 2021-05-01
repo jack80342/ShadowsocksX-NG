@@ -61,6 +61,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     var statusItem: NSStatusItem?
     var speedMonitor: NetWorkMonitor?
     var globalSubscribeFeed: Subscribe!
+    var proxyConfHelper: ProxyConfHelper = ProxyConfHelper()
 
     // MARK: Application function
 
@@ -197,7 +198,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         updateRunningModeMenu()
         updateLaunchAtLoginMenu()
 
-        ProxyConfHelper.install()
+        proxyConfHelper.install()
         applyConfig()
 //        SyncSSLocal()
 
@@ -225,10 +226,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         // Insert code here to tear down your application
         StopSSLocal()
         StopPrivoxy()
-        ProxyConfHelper.disableProxy("hi")
+        proxyConfHelper.disableProxy("hi")
         let defaults = UserDefaults.standard
         defaults.set(false, forKey: "ShadowsocksOn")
-        ProxyConfHelper.stopPACServer()
+        proxyConfHelper.stopPACServer()
     }
 
     func applyConfig() {
@@ -240,22 +241,22 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
             StartSSLocal()
             StartPrivoxy()
             if mode == "auto" {
-                ProxyConfHelper.disableProxy("hi")
-                ProxyConfHelper.enablePACProxy("hi")
+                proxyConfHelper.disableProxy("hi")
+                proxyConfHelper.enablePACProxy("hi")
             } else if mode == "global" {
-                ProxyConfHelper.disableProxy("hi")
-                ProxyConfHelper.enableGlobalProxy()
+                proxyConfHelper.disableProxy("hi")
+                proxyConfHelper.enableGlobalProxy()
             } else if mode == "manual" {
-                ProxyConfHelper.disableProxy("hi")
-                ProxyConfHelper.disableProxy("hi")
+                proxyConfHelper.disableProxy("hi")
+                proxyConfHelper.disableProxy("hi")
             } else if mode == "whiteList" {
-                ProxyConfHelper.disableProxy("hi")
-                ProxyConfHelper.enableWhiteListProxy()//新白名单基于GlobalMode
+                proxyConfHelper.disableProxy("hi")
+                proxyConfHelper.enableWhiteListProxy()//新白名单基于GlobalMode
             }
         } else {
             StopSSLocal()
             StopPrivoxy()
-            ProxyConfHelper.disableProxy("hi")
+            proxyConfHelper.disableProxy("hi")
         }
 
     }
@@ -321,18 +322,16 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         if let profile = ServerProfileManager.instance.getActiveProfile() {
             if profile.isValid() {
                 // Show window
-                DispatchQueue.global().async {
-                    if self.qrcodeWinCtrl != nil {
-                        self.qrcodeWinCtrl.close()
-                    }
-                    self.qrcodeWinCtrl = SWBQRCodeWindowController(windowNibName: NSNib.Name("SWBQRCodeWindowController"))
-                    self.qrcodeWinCtrl.qrCode = profile.URL()!.absoluteString
-                    self.qrcodeWinCtrl.title = profile.title()
-                    DispatchQueue.main.async {
-                        self.qrcodeWinCtrl.showWindow(self)
-                        NSApp.activate(ignoringOtherApps: true)
-                        self.qrcodeWinCtrl.window?.makeKeyAndOrderFront(nil)
-                    }
+                if qrcodeWinCtrl != nil {
+                    qrcodeWinCtrl.close()
+                }
+                qrcodeWinCtrl = SWBQRCodeWindowController(windowNibName: NSNib.Name("SWBQRCodeWindowController"))
+                qrcodeWinCtrl.qrCode = profile.URL()!.absoluteString
+                qrcodeWinCtrl.title = profile.title()
+                DispatchQueue.main.async {
+                    self.qrcodeWinCtrl.showWindow(self)
+                    NSApp.activate(ignoringOtherApps: true)
+                    self.qrcodeWinCtrl.window?.makeKeyAndOrderFront(nil)
                 }
                 return
             } else {

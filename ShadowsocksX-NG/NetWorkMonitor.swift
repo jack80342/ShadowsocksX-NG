@@ -6,7 +6,7 @@
 //  Copyright © 2016 郭佳哲. All rights reserved.
 //
 
-import Foundation
+import Cocoa
 
 open class NetWorkMonitor: NSObject {
     let statusItemView: StatusItemView
