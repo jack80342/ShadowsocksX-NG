@@ -23,26 +23,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="290" height="359"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yRy-QH-TEe">
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yRy-QH-TEe">
                         <rect key="frame" x="20" y="61" width="250" height="250"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="iAJ-tw-LNU"/>
                         <connections>
                             <outlet property="menu" destination="5h4-gO-Rh7" id="Ps3-TP-31Y"/>
                         </connections>
                     </imageView>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9f5-sB-jlD">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9f5-sB-jlD">
                         <rect key="frame" x="18" y="322" width="254" height="17"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="D7O-28-KIn"/>
+                        </constraints>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Title For Server" id="fHU-xF-zyc">
                             <font key="font" metaFont="systemSemibold" size="13"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fAd-u3-u8m">
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fAd-u3-u8m">
                         <rect key="frame" x="14" y="13" width="262" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Copy To Pasteboard" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3q0-EO-Vug">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -52,6 +52,18 @@
                         </connections>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="fAd-u3-u8m" firstAttribute="centerX" secondItem="9f5-sB-jlD" secondAttribute="centerX" id="5fL-bs-PbH"/>
+                    <constraint firstItem="fAd-u3-u8m" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="21" id="9rn-HY-l4k"/>
+                    <constraint firstItem="9f5-sB-jlD" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="Tcj-Ef-AJc"/>
+                    <constraint firstItem="9f5-sB-jlD" firstAttribute="leading" secondItem="yRy-QH-TEe" secondAttribute="leading" id="UB5-cl-pDH"/>
+                    <constraint firstItem="fAd-u3-u8m" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="WvE-wn-Xql"/>
+                    <constraint firstItem="yRy-QH-TEe" firstAttribute="top" secondItem="9f5-sB-jlD" secondAttribute="bottom" constant="11" id="bve-qp-Qmw"/>
+                    <constraint firstItem="fAd-u3-u8m" firstAttribute="top" secondItem="yRy-QH-TEe" secondAttribute="bottom" constant="21" id="c6d-Bd-9Cp"/>
+                    <constraint firstItem="fAd-u3-u8m" firstAttribute="centerX" secondItem="yRy-QH-TEe" secondAttribute="centerX" id="j7f-la-dRj"/>
+                    <constraint firstItem="9f5-sB-jlD" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="oyM-Rs-90M"/>
+                    <constraint firstAttribute="bottom" secondItem="fAd-u3-u8m" secondAttribute="bottom" constant="20" symbolic="YES" id="sLt-Fo-y5u"/>
+                </constraints>
             </view>
             <point key="canvasLocation" x="152" y="-70.5"/>
         </window>
