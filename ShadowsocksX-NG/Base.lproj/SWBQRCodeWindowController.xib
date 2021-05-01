@@ -9,6 +9,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="SWBQRCodeWindowController">
             <connections>
                 <outlet property="imageView" destination="yRy-QH-TEe" id="aa5-Ri-k04"/>
+                <outlet property="titleTextField" destination="9f5-sB-jlD" id="JSH-Me-HxF"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="HLy-eJ-5RD"/>
             </connections>
         </customObject>

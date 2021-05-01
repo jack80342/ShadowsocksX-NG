@@ -322,12 +322,12 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         if let profile = ServerProfileManager.instance.getActiveProfile() {
             if profile.isValid() {
                 // Show window
-                if self.qrcodeWinCtrl != nil {
-                    self.qrcodeWinCtrl.close()
+                if qrcodeWinCtrl != nil {
+                    qrcodeWinCtrl.close()
                 }
-                self.qrcodeWinCtrl = SWBQRCodeWindowController(windowNibName: NSNib.Name("SWBQRCodeWindowController"))
-                self.qrcodeWinCtrl.qrCode = profile.URL()!.absoluteString
-                self.qrcodeWinCtrl.title = profile.title()
+                qrcodeWinCtrl = SWBQRCodeWindowController(windowNibName: NSNib.Name("SWBQRCodeWindowController"))
+                qrcodeWinCtrl.qrCode = profile.URL()!.absoluteString
+                qrcodeWinCtrl.title = profile.title()
                 DispatchQueue.main.async {
                     self.qrcodeWinCtrl.showWindow(self)
                     NSApp.activate(ignoringOtherApps: true)
