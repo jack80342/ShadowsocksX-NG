@@ -51,7 +51,7 @@ Then I rewrite the GUI code by swift.
 - Could reorder shadowsocks profiles by drag & drop in servers preferences panel.
 - Auto check update (unable to auto download)
 
-## Different from original ShadowsocksX
+## Differences from original ShadowsocksX
 
 Run ss-local as backgroud service through launchd, not in app process.
 So after you quit the app, the ss-local maybe is still running. 
