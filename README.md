@@ -59,14 +59,6 @@ So after you quit the app, the ss-local maybe is still running.
 Add a manual mode which won't configure the system proxy settings. 
 Then you could configure your apps to use socks5 proxy manual.
 
-
-## TODO List
-- [ ] use nettop to repalce sar
-- [ ] rewrite OC code in Swift
-- [ ] use SwiftUI to rewite layout
-- [ ] Embed the http proxy server [privoxy](http://www.privoxy.org/), [get it](https://homebrew.bintray.com/bottles/privoxy-3.0.26.sierra.bottle.tar.gz).
-- [ ] ACL mode support [Shadowsocks ACL](https://github.com/shadowsocksr/shadowsocksr-libev/tree/master/acl)
-
 ## License
 
 The project is released under the terms of GPLv3.
