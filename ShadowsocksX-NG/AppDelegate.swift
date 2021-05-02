@@ -726,25 +726,25 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     func setUpMenu(_ showSpeed: Bool) {
         // should not operate the system status bar
         // we can add sub menu like bittorrent sync
-//        if statusItem == nil{
-//            statusItem = NSStatusBar.system().statusItem(withLength: 85)
-//            let image = NSImage(named: "menu_icon")
-//            image?.isTemplate = true
-//            statusItem!.image = image
-//            statusItemView = StatusItemView(statusItem: statusItem!, menu: statusMenu)
-//            statusItem!.view = statusItemView
-//        }
-//        if showSpeed{
-//            if speedMonitor == nil{
-//                speedMonitor = NetWorkMonitor(statusItemView: statusItemView)
-//            }
-//            statusItem?.length = 85
-//            speedMonitor?.start()
-//        }else{
-//            speedMonitor?.stop()
-//            speedMonitor = nil
-//            statusItem?.length = 20
-//        }
+        if statusItem == nil{
+            statusItem = NSStatusBar.system.statusItem(withLength: 65)
+            let image = NSImage(named: "menu_icon")
+            image?.isTemplate = true
+            statusItem!.image = image
+            statusItemView = StatusItemView(statusItem: statusItem!, menu: statusMenu)
+            statusItem!.view = statusItemView
+        }
+        if showSpeed{
+            if speedMonitor == nil{
+                speedMonitor = NetWorkMonitor(statusItemView: statusItemView)
+            }
+            statusItem?.length = 65
+            speedMonitor?.start()
+        }else{
+            speedMonitor?.stop()
+            speedMonitor = nil
+            statusItem?.length = 20
+        }
     }
 
     func checkForUpdate(mustShowAlert: Bool) -> Void {
