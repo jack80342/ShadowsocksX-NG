@@ -23,8 +23,8 @@ open class StatusItemView: NSControl {
 
     var upRate = "- - KB/s"
     var downRate = "- - KB/s"
-//    var image = NSImage(named: NSImage.Name("menu_icon"))
-//
+    var image = NSImage(named: NSImage.Name("menu_icon"))
+
     var showSpeed: Bool = false
 
     init(statusItem aStatusItem: NSStatusItem, menu aMenu: NSMenu) {
@@ -57,6 +57,8 @@ open class StatusItemView: NSControl {
             let downRateRect = downRateString.boundingRect(with: NSSize(width: 100, height: 100), options: .usesLineFragmentOrigin)
             downRateString.draw(at: NSMakePoint(bounds.width - downRateRect.width - 5, 0))
         }
+        
+        image?.draw(at: NSPoint(x: 0, y: 0), from: NSRect(x: 0, y: 0, width: bounds.height, height: bounds.height), operation: NSCompositingOperation.sourceOver, fraction: 1.0)
     }
 
     open func setRateData(up: Double, down: Double) {
