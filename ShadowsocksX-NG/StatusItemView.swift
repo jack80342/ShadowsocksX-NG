@@ -23,6 +23,7 @@ open class StatusItemView: NSControl {
 
     var upRate = "- - KB/s"
     var downRate = "- - KB/s"
+
     var image = NSImage(named: NSImage.Name("menu_icon"))
 
     var showSpeed: Bool = false
@@ -36,6 +37,11 @@ open class StatusItemView: NSControl {
         darkMode = SystemThemeChangeHelper.isCurrentDark()
 
         SystemThemeChangeHelper.addRespond(target: self, selector: #selector(changeMode))
+
+        let iconImageName = IconUtils.getIconImageName();
+        if(iconImageName != "") {
+            image = NSImage(named: NSImage.Name(iconImageName))!
+        }
     }
 
     required public init?(coder: NSCoder) {
@@ -57,7 +63,7 @@ open class StatusItemView: NSControl {
             let downRateRect = downRateString.boundingRect(with: NSSize(width: 100, height: 100), options: .usesLineFragmentOrigin)
             downRateString.draw(at: NSMakePoint(bounds.width - downRateRect.width - 5, 0))
         }
-        
+
         image?.draw(at: NSPoint(x: 0, y: 0), from: NSRect(x: 0, y: 0, width: bounds.height, height: bounds.height), operation: NSCompositingOperation.sourceOver, fraction: 1.0)
     }
 

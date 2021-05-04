@@ -57,7 +57,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     @IBOutlet var editSubscribeMenuItem: NSMenuItem!
 
     // MARK: Variables
-    var statusItemView: StatusItemView!
+    var statusItemView: StatusItemView?
     var statusItem: NSStatusItem!
     var speedMonitor: NetWorkMonitor?
     var globalSubscribeFeed: Subscribe!
@@ -584,33 +584,27 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     }
 
     func updateStatusItemUI() {
-        var image = NSImage()
-        let defaults = UserDefaults.standard
-        let mode = defaults.string(forKey: "ShadowsocksRunningMode")
-        if !defaults.bool(forKey: "ShadowsocksOn") {
+        if !UserDefaults.standard.bool(forKey: "ShadowsocksOn") {
             return
         }
-        if mode == "auto" {
-            image = NSImage(named: NSImage.Name("menu_icon_pac"))!
-            //statusItem?.title = "Auto".localized
-        } else if mode == "global" {
-            //statusItem?.title = "Global".localized
-            image = NSImage(named: NSImage.Name("menu_icon_global"))!
-        } else if mode == "manual" {
-            image = NSImage(named: NSImage.Name("menu_icon_manual"))!
-            //statusItem?.title = "Manual".localized
-        } else if mode == "whiteList" {
-            if defaults.string(forKey: "ACLFileName")! == "chn.acl" {
-                image = NSImage(named: NSImage.Name("menu_icon_white"))!
-            } else {
-                image = NSImage(named: NSImage.Name("menu_icon_acl"))!
-            }
+
+        var image = NSImage()
+        let iconImageName = IconUtils.getIconImageName();
+        if(iconImageName != "") {
+            image = NSImage(named: NSImage.Name(iconImageName))!
         }
-//        let titleWidth: CGFloat = 0//statusItem?.title!.size(withAttributes: [NSFontAttributeName: statusItem?.button!.font!]).width//这里不包含IP白名单模式等等，需要重新调整//PS还是给上游加上白名单模式？
-//        let imageWidth: CGFloat = 20
-//        statusItem?.length = titleWidth + imageWidth
         image.isTemplate = true
         statusItem!.image = image
+
+        if(statusItem!.view != nil) {
+            statusItem!.length = 85
+            statusItemView = StatusItemView(statusItem: statusItem!, menu: statusMenu)
+            statusItem!.view = statusItemView
+
+            speedMonitor?.stop()
+            speedMonitor = NetWorkMonitor(statusItemView: statusItemView!)
+            speedMonitor?.start()
+        }
     }
 
     func updateMainMenu() {
@@ -734,7 +728,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
             statusItem!.view = statusItemView
 
             if speedMonitor == nil {
-                speedMonitor = NetWorkMonitor(statusItemView: statusItemView)
+                speedMonitor = NetWorkMonitor(statusItemView: statusItemView!)
             }
             speedMonitor?.start()
         } else {
