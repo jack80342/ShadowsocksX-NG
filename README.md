@@ -2,17 +2,14 @@
 
 [![Build Status](https://travis-ci.org/shadowsocksr/ShadowsocksX-NG.svg?branches=develop)](https://travis-ci.org/shadowsocksr/ShadowsocksX-NG)
 
-Next Generation of [ShadowsocksX](https://github.com/shadowsocks/shadowsocks-iOS) with SSR support.
+Next Generation of [ShadowsocksX](https://github.com/shadowsocks/shadowsocks-iOS) with limited SSR support.
 
 ## Why?
 
-It's hard to maintain the original implement. There are too many unused code in it. 
-It also embed ss-local source. It's crazy to maintain dependencies of ss-local. 
-So it's hard to update ss-local version.
+The original implement embed ss-local source. This makes it hard to update ss-local.
 
 Now I just copy the ss-local from Homebrew. Run ss-local executable as a Launch Agent in background. 
-Serve pac js file as a file url. So there are only some souce code related to GUI left. 
-Then I rewrite the GUI code by swift.
+Serve pac js file as a file url. So only some souce code related to GUI left. 
 
 ## Requirements
 
@@ -27,29 +24,27 @@ Then I rewrite the GUI code by swift.
 
 ## Features
 
-- SSR features!
-- Ability to check update from GitHub.
+- Show up/down speed
+- Limited SSR support
 - White domain list & white IP list
 - Use ss-local from shadowsocks-libev 3.3.5_1
-- Ability to update PAC by download GFW List from GitHub. (You can even customize your list)
-- Ability to update ACL white list from GutHub. (You can even customize your list)
-- Show QRCode for current server profile.
-- Scan QRCode from screen.
+- Auto update PAC by download GFW List from GitHub. (You can even customize your list)
+- Auto update ACL white list from GutHub. (You can even customize your list)
+- Show QRCode for current server profile
+- Scan QRCode from screen
 - Import config.json to config all your servers (SSR-C# password protect not supported yet)
-- Auto launch at login.
-- User rules for PAC.
-- Support for OTA is removed
+- Auto launch at login
+- User rules for PAC
 - An advance preferences panel to configure:
-  - Local socks5 listen address.
-  - Local socks5 listen port.
-  - Local socks5 timeout.
-  - If enable UDP relay.
-  - GFW List url.
-  - ACL White List url.
-  - ACL GFW list and proxy bach CHN list.
-- Manual spesify network service profiles which would be configure the proxy.
-- Could reorder shadowsocks profiles by drag & drop in servers preferences panel.
-- Auto check update (unable to auto download)
+  - Local socks5 listen address
+  - Local socks5 listen port
+  - Local socks5 timeout
+  - If enable UDP relay
+  - GFW List URL
+  - ACL White List URL
+  - ACL GFW list and proxy bach CHN list
+- Manual spesify network service profiles which would be configure the proxy
+- Could reorder shadowsocks profiles by drag & drop in servers preferences panel
 
 ## Differences from original ShadowsocksX
 
