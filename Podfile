@@ -15,17 +15,12 @@ target 'ShadowsocksX-NG-R' do
     inherit! :search_paths
     # Pods for testing
   end
-
-end
-
-target 'proxy_conf_helper' do
-  pod 'BRLOptionParser', '~> 0.3.1'
 end
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-      config.build_settings['SWIFT_VERSION'] = '5.0'
+      config.build_settings['SWIFT_VERSION'] = '5.3'
     end
   end
 end

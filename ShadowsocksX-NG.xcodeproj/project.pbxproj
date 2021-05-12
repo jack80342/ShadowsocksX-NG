@@ -26,13 +26,13 @@
 		090294792639B2CC00FAC817 /* SWBQRCodeWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090294782639B2CC00FAC817 /* SWBQRCodeWindowController.swift */; };
 		092A90F32625E0F1007CA9CA /* SWBApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A90F22625E0F1007CA9CA /* SWBApplication.swift */; };
 		0948A8CF26288D090060D4AA /* QRCodeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0948A8CE26288D090060D4AA /* QRCodeUtils.swift */; };
-		094A892F26248D4C00394747 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 094A892E26248D4C00394747 /* LaunchAtLogin */; };
+		094A892F26248D4C00394747 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 094A892E26248D4C00394747 /* SwiftPackageProductDependency */; };
 		0958DA67264810E100AF66D5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0958DA66264810E100AF66D5 /* main.swift */; };
-		0958DA7826483A8C00AF66D5 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 0958DA7726483A8C00AF66D5 /* ArgumentParser */; };
+		0958DA7826483A8C00AF66D5 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 0958DA7726483A8C00AF66D5 /* SwiftPackageProductDependency */; };
 		09666027261D4BC10022C66C /* privoxy in Resources */ = {isa = PBXBuildFile; fileRef = C6D4298F1DA75988002A5711 /* privoxy */; };
 		0966602E261D51580022C66C /* libcrypto.1.0.0.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 09F9DCD1261CC452006CA4B9 /* libcrypto.1.0.0.dylib */; };
 		0984E978263AFDF400A79681 /* SWBQRCodeWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0984E97A263AFDF400A79681 /* SWBQRCodeWindowController.xib */; };
-		099C07EE26249E6300D6FD67 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 099C07ED26249E6300D6FD67 /* Alamofire */; };
+		099C07EE26249E6300D6FD67 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 099C07ED26249E6300D6FD67 /* SwiftPackageProductDependency */; };
 		09AB0C26262F0485008E57C1 /* ProxyConfHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB0C25262F0485008E57C1 /* ProxyConfHelper.swift */; };
 		09AB0C2E262F298A008E57C1 /* ProxyConfHelperVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB0C2D262F298A008E57C1 /* ProxyConfHelperVersion.swift */; };
 		09B0F22926413D7A0045297F /* IconUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B0F22826413D7A0045297F /* IconUtils.swift */; };
@@ -81,7 +81,6 @@
 		C8E42A6C1D4F270A0074C7EA /* UserRulesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E42A6A1D4F270A0074C7EA /* UserRulesController.swift */; };
 		C8E42A6E1D4F2CAF0074C7EA /* UserRulesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8E42A701D4F2CAF0074C7EA /* UserRulesController.xib */; };
 		E0E57CCA7EB34B90F9D340F2 /* Pods_ShadowsocksX_NGTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 388120F062D7EB7DD0D8DDCA /* Pods_ShadowsocksX_NGTests.framework */; };
-		F0809FF1595BE2966343D3C7 /* libPods-proxy_conf_helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7783AEDB4A3BDDC9FF16AC /* libPods-proxy_conf_helper.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,8 +146,6 @@
 		09C3968B26345B0B009C2C99 /* ProxyConfTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfTool.swift; sourceTree = "<group>"; };
 		09F9DCD1261CC452006CA4B9 /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
 		19083CFCED87354F006967FF /* Pods_ShadowsocksX_NGUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShadowsocksX_NGUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E7783AEDB4A3BDDC9FF16AC /* libPods-proxy_conf_helper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-proxy_conf_helper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		297AF069022A197FD8E9D226 /* Pods-proxy_conf_helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proxy_conf_helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-proxy_conf_helper/Pods-proxy_conf_helper.release.xcconfig"; sourceTree = "<group>"; };
 		388120F062D7EB7DD0D8DDCA /* Pods_ShadowsocksX_NGTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShadowsocksX_NGTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC7CD9886196A997D6FC78D /* Pods-ShadowsocksX-NGTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowsocksX-NGTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShadowsocksX-NGTests/Pods-ShadowsocksX-NGTests.release.xcconfig"; sourceTree = "<group>"; };
 		50D54926AA21B0D4D8DD9C4F /* Pods-ShadowsocksX-NGUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowsocksX-NGUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShadowsocksX-NGUITests/Pods-ShadowsocksX-NGUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -195,7 +192,6 @@
 		9BEEF0771D04FE8A00FC52B3 /* LaunchAgentUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchAgentUtils.swift; sourceTree = "<group>"; };
 		9BEEF0791D05631500FC52B3 /* AdvPreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvPreferencesWindowController.swift; sourceTree = "<group>"; };
 		A19B8932C3296BB99D96D636 /* Pods-ShadowsocksX-NG-R.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowsocksX-NG-R.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShadowsocksX-NG-R/Pods-ShadowsocksX-NG-R.debug.xcconfig"; sourceTree = "<group>"; };
-		B4E6A97CA843F3943524B686 /* Pods-proxy_conf_helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proxy_conf_helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-proxy_conf_helper/Pods-proxy_conf_helper.debug.xcconfig"; sourceTree = "<group>"; };
 		C6D4298E1DA75988002A5711 /* install_privoxy.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install_privoxy.sh; sourceTree = "<group>"; };
 		C6D4298F1DA75988002A5711 /* privoxy */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = privoxy; sourceTree = "<group>"; };
 		C6D429901DA75988002A5711 /* reload_conf_privoxy.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = reload_conf_privoxy.sh; sourceTree = "<group>"; };
@@ -219,8 +215,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				094A892F26248D4C00394747 /* LaunchAtLogin in Frameworks */,
-				099C07EE26249E6300D6FD67 /* Alamofire in Frameworks */,
+				094A892F26248D4C00394747 /* BuildFile in Frameworks */,
+				099C07EE26249E6300D6FD67 /* BuildFile in Frameworks */,
 				9B3FFF3E1D08D9910019A709 /* SystemConfiguration.framework in Frameworks */,
 				1F94B2D84433EFEBF9FAE5D0 /* Pods_ShadowsocksX_NG_R.framework in Frameworks */,
 			);
@@ -238,8 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0958DA7826483A8C00AF66D5 /* ArgumentParser in Frameworks */,
-				F0809FF1595BE2966343D3C7 /* libPods-proxy_conf_helper.a in Frameworks */,
+				0958DA7826483A8C00AF66D5 /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,8 +250,6 @@
 				3AC7CD9886196A997D6FC78D /* Pods-ShadowsocksX-NGTests.release.xcconfig */,
 				58907E7F50405104B42CB189 /* Pods-ShadowsocksX-NGUITests.debug.xcconfig */,
 				50D54926AA21B0D4D8DD9C4F /* Pods-ShadowsocksX-NGUITests.release.xcconfig */,
-				B4E6A97CA843F3943524B686 /* Pods-proxy_conf_helper.debug.xcconfig */,
-				297AF069022A197FD8E9D226 /* Pods-proxy_conf_helper.release.xcconfig */,
 				A19B8932C3296BB99D96D636 /* Pods-ShadowsocksX-NG-R.debug.xcconfig */,
 				0040BAA5CCE078754B2DD439 /* Pods-ShadowsocksX-NG-R.release.xcconfig */,
 			);
@@ -399,7 +392,6 @@
 				9B3FFF3B1D08D93B0019A709 /* WebKit.framework */,
 				388120F062D7EB7DD0D8DDCA /* Pods_ShadowsocksX_NGTests.framework */,
 				19083CFCED87354F006967FF /* Pods_ShadowsocksX_NGUITests.framework */,
-				1E7783AEDB4A3BDDC9FF16AC /* libPods-proxy_conf_helper.a */,
 				DFF6A36F1612D98DC91EF19A /* Pods_ShadowsocksX_NG_R.framework */,
 			);
 			name = Frameworks;
@@ -426,8 +418,8 @@
 			);
 			name = "ShadowsocksX-NG-R";
 			packageProductDependencies = (
-				094A892E26248D4C00394747 /* LaunchAtLogin */,
-				099C07ED26249E6300D6FD67 /* Alamofire */,
+				094A892E26248D4C00394747 /* SwiftPackageProductDependency */,
+				099C07ED26249E6300D6FD67 /* SwiftPackageProductDependency */,
 			);
 			productName = "ShadowsocksX-NG";
 			productReference = 9B0BFFE51D0460A70040E62B /* ShadowsocksX-NG-R.app */;
@@ -456,7 +448,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B3FFF481D09CD3B0019A709 /* Build configuration list for PBXNativeTarget "proxy_conf_helper" */;
 			buildPhases = (
-				3545247EFCD033C3FA63EA6C /* [CP] Check Pods Manifest.lock */,
 				9B3FFF401D09CD3B0019A709 /* Sources */,
 				9B3FFF411D09CD3B0019A709 /* Frameworks */,
 				9B3FFF421D09CD3B0019A709 /* CopyFiles */,
@@ -467,7 +458,7 @@
 			);
 			name = proxy_conf_helper;
 			packageProductDependencies = (
-				0958DA7726483A8C00AF66D5 /* ArgumentParser */,
+				0958DA7726483A8C00AF66D5 /* SwiftPackageProductDependency */,
 			);
 			productName = proxy_conf_helper;
 			productReference = 9B3FFF441D09CD3B0019A709 /* proxy_conf_helper */;
@@ -515,9 +506,9 @@
 			);
 			mainGroup = 9B0BFFDC1D0460A70040E62B;
 			packageReferences = (
-				094A892D26248D4C00394747 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
-				099C07EC26249E6300D6FD67 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				0958DA6B2648123C00AF66D5 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				094A892D26248D4C00394747 /* RemoteSwiftPackageReference */,
+				099C07EC26249E6300D6FD67 /* RemoteSwiftPackageReference */,
+				0958DA6B2648123C00AF66D5 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 9B0BFFE61D0460A70040E62B /* Products */;
 			projectDirPath = "";
@@ -615,24 +606,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ShadowsocksX-NGTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3545247EFCD033C3FA63EA6C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-proxy_conf_helper-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1053,7 +1026,6 @@
 		};
 		9B3FFF491D09CD3B0019A709 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4E6A97CA843F3943524B686 /* Pods-proxy_conf_helper.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -1075,7 +1047,6 @@
 		};
 		9B3FFF4A1D09CD3B0019A709 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 297AF069022A197FD8E9D226 /* Pods-proxy_conf_helper.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -1136,7 +1107,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		094A892D26248D4C00394747 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+		094A892D26248D4C00394747 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin";
 			requirement = {
@@ -1144,7 +1115,7 @@
 				minimumVersion = 4.1.0;
 			};
 		};
-		0958DA6B2648123C00AF66D5 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+		0958DA6B2648123C00AF66D5 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-argument-parser";
 			requirement = {
@@ -1152,7 +1123,7 @@
 				minimumVersion = 0.4.3;
 			};
 		};
-		099C07EC26249E6300D6FD67 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		099C07EC26249E6300D6FD67 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
@@ -1163,19 +1134,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		094A892E26248D4C00394747 /* LaunchAtLogin */ = {
+		094A892E26248D4C00394747 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 094A892D26248D4C00394747 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
+			package = 094A892D26248D4C00394747 /* RemoteSwiftPackageReference */;
 			productName = LaunchAtLogin;
 		};
-		0958DA7726483A8C00AF66D5 /* ArgumentParser */ = {
+		0958DA7726483A8C00AF66D5 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0958DA6B2648123C00AF66D5 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			package = 0958DA6B2648123C00AF66D5 /* RemoteSwiftPackageReference */;
 			productName = ArgumentParser;
 		};
-		099C07ED26249E6300D6FD67 /* Alamofire */ = {
+		099C07ED26249E6300D6FD67 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 099C07EC26249E6300D6FD67 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 099C07EC26249E6300D6FD67 /* RemoteSwiftPackageReference */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */

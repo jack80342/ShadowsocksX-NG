@@ -1,22 +1,18 @@
 PODS:
-  - BRLOptionParser (0.3.1)
   - GCDWebServer (3.5.4):
     - GCDWebServer/Core (= 3.5.4)
   - GCDWebServer/Core (3.5.4)
 
 DEPENDENCIES:
-  - BRLOptionParser (~> 0.3.1)
   - GCDWebServer (~> 3.5.4)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - BRLOptionParser
     - GCDWebServer
 
 SPEC CHECKSUMS:
-  BRLOptionParser: a03256a8ff003ca1f5376c55f55f210e085a3958
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
 
-PODFILE CHECKSUM: 82ffe4162bf432df275c696c3de421e650c413a9
+PODFILE CHECKSUM: 6c7e9eef904d09faaa6c263cb2cfb32ab616ca71
 
 COCOAPODS: 1.10.1
