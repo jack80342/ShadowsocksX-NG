@@ -8,7 +8,7 @@ Next Generation of [ShadowsocksX](https://github.com/shadowsocks/shadowsocks-iOS
 
 The original implement embed ss-local source. This makes it hard to update ss-local.
 
-Now I just copy the ss-local from Homebrew. Run ss-local executable as a Launch Agent in background. 
+Now I just copy the [ss-local](https://formulae.brew.sh/formula/shadowsocks-libev) from Homebrew. Run ss-local executable as a Launch Agent in background. 
 Serve pac js file as a file url. So only some souce code related to GUI left. 
 
 ## Requirements
