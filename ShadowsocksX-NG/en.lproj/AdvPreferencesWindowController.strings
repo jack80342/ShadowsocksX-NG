@@ -1,0 +1,42 @@
+
+/* Class = "NSButtonCell"; title = "Enable Udp Replay"; ObjectID = "1C3-4s-Apd"; */
+"1C3-4s-Apd.title" = "Enable Udp Replay";
+
+/* Class = "NSTextFieldCell"; title = "Don't change these preferences if you have no idea what they are."; ObjectID = "8wL-qv-5nD"; */
+"8wL-qv-5nD.title" = "Don't change these preferences if you have no idea what they are.";
+
+/* Class = "NSWindow"; title = "Advance Preferences"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "Advance Preferences";
+
+/* Class = "NSTextFieldCell"; title = "Seconds"; ObjectID = "Gd3-Fm-sWh"; */
+"Gd3-Fm-sWh.title" = "Seconds";
+
+/* Class = "NSTextFieldCell"; title = "Local PAC Listen Port:"; ObjectID = "PSg-XK-qhl"; */
+"PSg-XK-qhl.title" = "Local PAC Listen Port:";
+
+/* Class = "NSTextFieldCell"; title = "ACL White List URL:"; ObjectID = "aif-uV-Lxk"; */
+"aif-uV-Lxk.title" = "ACL White List URL:";
+
+/* Class = "NSTextFieldCell"; title = "Local Socks5 Listen Address:"; ObjectID = "cwr-n0-zwn"; */
+"cwr-n0-zwn.title" = "Local Socks5 Listen Address:";
+
+/* Class = "NSTextFieldCell"; title = "ACL Back China URL:"; ObjectID = "cwt-37-PW1"; */
+"cwt-37-PW1.title" = "ACL Back China URL:";
+
+/* Class = "NSButtonCell"; title = "Enable Verbose Mode"; ObjectID = "dCD-gg-I2i"; */
+"dCD-gg-I2i.title" = "Enable Verbose Mode";
+
+/* Class = "NSTextFieldCell"; title = "PAC GFW List URL:"; ObjectID = "dg0-gS-z5V"; */
+"dg0-gS-z5V.title" = "PAC GFW List URL:";
+
+/* Class = "NSTextFieldCell"; title = "Local PAC Listen Address:"; ObjectID = "dvL-Ic-Wae"; */
+"dvL-Ic-Wae.title" = "Local PAC Listen Address:";
+
+/* Class = "NSTextFieldCell"; title = "Timeout:"; ObjectID = "i4l-2S-gOQ"; */
+"i4l-2S-gOQ.title" = "Timeout:";
+
+/* Class = "NSTextFieldCell"; title = "Local Socks5 Listen Port:"; ObjectID = "qRs-ow-vVB"; */
+"qRs-ow-vVB.title" = "Local Socks5 Listen Port:";
+
+/* Class = "NSTextFieldCell"; title = "ACL Auto List URL:"; ObjectID = "qhu-d1-qgq"; */
+"qhu-d1-qgq.title" = "ACL Auto List URL:";

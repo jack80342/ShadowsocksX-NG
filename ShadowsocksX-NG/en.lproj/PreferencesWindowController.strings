@@ -14,17 +14,32 @@
 /* Class = "NSTextFieldCell"; title = "Remarks:"; ObjectID = "MiN-VE-FtC"; */
 "MiN-VE-FtC.title" = "Remarks:";
 
-/* Class = "NSButtonCell"; title = "Enable OTA"; ObjectID = "hRZ-Rp-I5e"; */
-"hRZ-Rp-I5e.title" = "Enable OTA";
+/* Class = "NSTextFieldCell"; title = "SSR Settings (Left empty if not sure what it is)"; ObjectID = "Vtp-4J-er7"; */
+"Vtp-4J-er7.title" = "SSR Settings (Left empty if not sure what it is)";
+
+/* Class = "NSTextFieldCell"; title = "Obfs:"; ObjectID = "aQj-D7-XWZ"; */
+"aQj-D7-XWZ.title" = "Obfs:";
+
+/* Class = "NSTextFieldCell"; title = "Protocol Param:"; ObjectID = "dCk-qx-L1X"; */
+"dCk-qx-L1X.title" = "Protocol Param:";
+
+/* Class = "NSTextFieldCell"; title = "Obfs Param:"; ObjectID = "g7c-fW-7J4"; */
+"g7c-fW-7J4.title" = "Obfs Param:";
 
 /* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "j03-9E-uHW"; */
 "j03-9E-uHW.title" = "Cancel";
+
+/* Class = "NSTextFieldCell"; title = "Group:"; ObjectID = "j0N-8s-9Z3"; */
+"j0N-8s-9Z3.title" = "Group:";
 
 /* Class = "NSTextFieldCell"; title = "Password:"; ObjectID = "kil-xC-HPD"; */
 "kil-xC-HPD.title" = "Password:";
 
 /* Class = "NSTextFieldCell"; title = "Encryption:"; ObjectID = "mOh-nD-7EX"; */
 "mOh-nD-7EX.title" = "Encryption:";
+
+/* Class = "NSTextFieldCell"; title = "Protocol:"; ObjectID = "nmk-Ue-wYb"; */
+"nmk-Ue-wYb.title" = "Protocol:";
 
 /* Class = "NSButtonCell"; title = "Copy URL to Clipboard"; ObjectID = "t3T-Kd-5La"; */
 "t3T-Kd-5La.title" = "Copy URL to Clipboard";

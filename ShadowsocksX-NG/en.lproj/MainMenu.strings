@@ -1,0 +1,129 @@
+
+/* Class = "NSMenuItem"; title = "Check Updates At Launch"; ObjectID = "3nJ-zQ-Agj"; */
+"3nJ-zQ-Agj.title" = "Check Updates At Launch";
+
+/* Class = "NSMenuItem"; title = "Export All Server To Json..."; ObjectID = "6k0-gn-DQv"; */
+"6k0-gn-DQv.title" = "Export All Server To Json...";
+
+/* Class = "NSMenuItem"; title = "Manual Mode"; ObjectID = "8PR-gs-c5N"; */
+"8PR-gs-c5N.title" = "Manual Mode";
+
+/* Class = "NSMenu"; title = "Servers"; ObjectID = "9Y1-db-3HK"; */
+"9Y1-db-3HK.title" = "Servers";
+
+/* Class = "NSMenuItem"; title = "Turn ShadowsocksX On"; ObjectID = "GSu-Tf-StS"; */
+"GSu-Tf-StS.title" = "Turn ShadowsocksX On";
+
+/* Class = "NSMenu"; title = "ShadowsocksX-NG"; ObjectID = "Hob-KD-bx9"; */
+"Hob-KD-bx9.title" = "ShadowsocksX-NG";
+
+/* Class = "NSMenuItem"; title = "Show Logs..."; ObjectID = "Jfy-sf-Fhl"; */
+"Jfy-sf-Fhl.title" = "Show Logs...";
+
+/* Class = "NSMenuItem"; title = "About"; ObjectID = "LgB-6g-Gba"; */
+"LgB-6g-Gba.title" = "About";
+
+/* Class = "NSMenuItem"; title = "Server Preferences..."; ObjectID = "M5r-E7-44f"; */
+"M5r-E7-44f.title" = "Server Preferences...";
+
+/* Class = "NSMenuItem"; title = "Global Mode"; ObjectID = "Mw3-Jm-eXA"; */
+"Mw3-Jm-eXA.title" = "Global Mode";
+
+/* Class = "NSMenuItem"; title = "Manual Update Subscribe"; ObjectID = "NnE-Ad-1An"; */
+"NnE-Ad-1An.title" = "Manual Update Subscribe";
+
+/* Class = "NSMenuItem"; title = "Edit Subscribe Feed"; ObjectID = "QJ6-eg-mzv"; */
+"QJ6-eg-mzv.title" = "Edit Subscribe Feed";
+
+/* Class = "NSMenuItem"; title = "Scan QR Code From Screen..."; ObjectID = "Qe6-bF-paT"; */
+"Qe6-bF-paT.title" = "Scan QR Code From Screen...";
+
+/* Class = "NSMenuItem"; title = "Show QR Code For Current Server..."; ObjectID = "R6A-96-Zcb"; */
+"R6A-96-Zcb.title" = "Show QR Code For Current Server...";
+
+/* Class = "NSMenuItem"; title = "White List Mode"; ObjectID = "RvZ-Zn-29U"; */
+"RvZ-Zn-29U.title" = "White List Mode";
+
+/* Class = "NSMenuItem"; title = "Import Bunch Json File..."; ObjectID = "T9g-gy-gvv"; */
+"T9g-gy-gvv.title" = "Import Bunch Json File...";
+
+/* Class = "NSMenuItem"; title = "Update PAC file"; ObjectID = "TFc-Ec-duM"; */
+"TFc-Ec-duM.title" = "Update PAC file";
+
+/* Class = "NSMenuItem"; title = "Feedback"; ObjectID = "W7u-7g-Gv4"; */
+"W7u-7g-Gv4.title" = "Feedback";
+
+/* Class = "NSMenu"; title = "Proxy Settings"; ObjectID = "YZp-bf-L40"; */
+"YZp-bf-L40.title" = "Proxy Settings";
+
+/* Class = "NSMenuItem"; title = "ACL Mode"; ObjectID = "Yub-b0-bni"; */
+"Yub-b0-bni.title" = "ACL Mode";
+
+/* Class = "NSMenuItem"; title = "Show network speed"; ObjectID = "a3h-uQ-DuO"; */
+"a3h-uQ-DuO.title" = "Show network speed";
+
+/* Class = "NSMenuItem"; title = "Connect At Launch"; ObjectID = "aB3-cf-5j0"; */
+"aB3-cf-5j0.title" = "Connect At Launch";
+
+/* Class = "NSMenuItem"; title = "Advance Preference ..."; ObjectID = "bZ3-fy-34d"; */
+"bZ3-fy-34d.title" = "Advance Preference ...";
+
+/* Class = "NSMenuItem"; title = "Proxy Settings"; ObjectID = "diI-fB-Rss"; */
+"diI-fB-Rss.title" = "Proxy Settings";
+
+/* Class = "NSMenuItem"; title = "Launch At Login"; ObjectID = "eUq-p7-ICK"; */
+"eUq-p7-ICK.title" = "Launch At Login";
+
+/* Class = "NSMenuItem"; title = "Showsocks: On"; ObjectID = "fzk-mE-CEV"; */
+"fzk-mE-CEV.title" = "Showsocks: On";
+
+/* Class = "NSMenuItem"; title = "Update ACL file"; ObjectID = "gde-ZE-086"; */
+"gde-ZE-086.title" = "Update ACL file";
+
+/* Class = "NSMenuItem"; title = "Proxy Back China"; ObjectID = "lam-el-r4I"; */
+"lam-el-r4I.title" = "Proxy Back China";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "lay-XB-0oV"; */
+"lay-XB-0oV.title" = "Item 2";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "m00-ru-6Po"; */
+"m00-ru-6Po.title" = "Item 3";
+
+/* Class = "NSMenuItem"; title = "Update Subscribe on App Start"; ObjectID = "nQ4-Nv-tox"; */
+"nQ4-Nv-tox.title" = "Update Subscribe on App Start";
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "oR3-cT-RTC"; */
+"oR3-cT-RTC.title" = "Item 1";
+
+/* Class = "NSMenuItem"; title = "Show Bunch Json Example File..."; ObjectID = "pdy-JE-50Q"; */
+"pdy-JE-50Q.title" = "Show Bunch Json Example File...";
+
+/* Class = "NSMenuItem"; title = "Auto Mode By PAC"; ObjectID = "r07-Gu-aEz"; */
+"r07-Gu-aEz.title" = "Auto Mode By PAC";
+
+/* Class = "NSMenuItem"; title = "Edit User Rules For PAC..."; ObjectID = "rms-p0-CvB"; */
+"rms-p0-CvB.title" = "Edit User Rules For PAC...";
+
+/* Class = "NSMenuItem"; title = "ACL Auto"; ObjectID = "sDG-YV-yuQ"; */
+"sDG-YV-yuQ.title" = "ACL Auto";
+
+/* Class = "NSMenuItem"; title = "Advance Proxy Preference..."; ObjectID = "sbx-yz-3lO"; */
+"sbx-yz-3lO.title" = "Advance Proxy Preference...";
+
+/* Class = "NSMenu"; title = "ACL Mode"; ObjectID = "tEB-59-fCx"; */
+"tEB-59-fCx.title" = "ACL Mode";
+
+/* Class = "NSMenuItem"; title = "Servers"; ObjectID = "u5M-hQ-VSc"; */
+"u5M-hQ-VSc.title" = "Servers";
+
+/* Class = "NSMenuItem"; title = "HTTP Proxy Preference ..."; ObjectID = "uEp-Gz-cu0"; */
+"uEp-Gz-cu0.title" = "HTTP Proxy Preference ...";
+
+/* Class = "NSMenuItem"; title = "Quit"; ObjectID = "vJS-JW-byz"; */
+"vJS-JW-byz.title" = "Quit";
+
+/* Class = "NSMenuItem"; title = "Check Updates"; ObjectID = "wyZ-4G-qg9"; */
+"wyZ-4G-qg9.title" = "Check Updates";
+
+/* Class = "NSMenuItem"; title = "Ping server"; ObjectID = "zfR-Jt-GmS"; */
+"zfR-Jt-GmS.title" = "Ping server";
