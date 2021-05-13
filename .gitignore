@@ -32,33 +32,6 @@ Builds/
 !default.perspectivev3
 
 ####
-# Xcode 4
-xcuserdata
-!xcschemes
-# Xcode 4
-*.moved-aside
-
-####
-# XCode 4 workspaces - more detailed
-!xcshareddata
-!default.xcworkspace
-*.xcworkspacedata
-
-
-####
-# Xcode 5
-*.xccheckout
-*.xcuserstate
-
-####
-# Xcode 7
-*.xcscmblueprint
-
-####
-# AppCode
-.idea/
-
-####
 # Other Xcode files
 profile
 *.hmap
