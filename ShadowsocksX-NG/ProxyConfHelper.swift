@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import GCDWebServer
+import GCDWebServers
 
 class ProxyConfHelper {
 

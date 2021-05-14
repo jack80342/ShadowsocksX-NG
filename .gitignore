@@ -31,6 +31,10 @@ Builds/
 !default.mode2v3
 !default.perspectivev3
 
+
+xcuserdata
+xcshareddata
+
 ####
 # Other Xcode files
 profile

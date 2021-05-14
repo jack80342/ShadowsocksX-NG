@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/shadowsocksr/ShadowsocksX-NG.svg?branches=develop)](https://travis-ci.org/shadowsocksr/ShadowsocksX-NG)
 
-Next Generation of [ShadowsocksX](https://github.com/shadowsocks/shadowsocks-iOS) with limited SSR support.
+Next Generation of Shadowsocks(R) macOS client with limited SSR support.
 
 ## Why?
 
@@ -19,8 +19,7 @@ Serve pac js file as a file url. So only some souce code related to GUI left.
 
 ### Building
 
-- Xcode 12.4+
-- cocoapod 1.10.1+
+- Xcode 12.5+
 
 ## Features
 
