@@ -143,6 +143,8 @@
 		092A90F22625E0F1007CA9CA /* SWBApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBApplication.swift; sourceTree = "<group>"; };
 		0948A8CE26288D090060D4AA /* QRCodeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeUtils.swift; sourceTree = "<group>"; };
 		094A892626248C8300394747 /* ShadowsocksX-NG-RRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ShadowsocksX-NG-RRelease.entitlements"; sourceTree = "<group>"; };
+		094BFD4E2659F9D80055F263 /* proxy_conf_helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = proxy_conf_helper.entitlements; sourceTree = "<group>"; };
+		094BFD4F2659F9E90055F263 /* ShadowsocksX-NG-R.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ShadowsocksX-NG-R.entitlements"; sourceTree = "<group>"; };
 		0958DA66264810E100AF66D5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0984E979263AFDF400A79681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SWBQRCodeWindowController.xib; sourceTree = "<group>"; };
 		0984E97F263AFDF800A79681 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SWBQRCodeWindowController.strings"; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 		9B0BFFDC1D0460A70040E62B = {
 			isa = PBXGroup;
 			children = (
+				094BFD4F2659F9E90055F263 /* ShadowsocksX-NG-R.entitlements */,
 				094A892626248C8300394747 /* ShadowsocksX-NG-RRelease.entitlements */,
 				9B0BFFE71D0460A70040E62B /* ShadowsocksX-NG */,
 				9B0BFFF71D0460A70040E62B /* ShadowsocksX-NGTests */,
@@ -357,6 +360,7 @@
 		9B3FFF451D09CD3B0019A709 /* proxy_conf_helper */ = {
 			isa = PBXGroup;
 			children = (
+				094BFD4E2659F9D80055F263 /* proxy_conf_helper.entitlements */,
 				0958DA66264810E100AF66D5 /* main.swift */,
 			);
 			path = proxy_conf_helper;
@@ -845,6 +849,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "ShadowsocksX-NG-R.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 766AV76B44;
@@ -862,7 +867,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.6.1;
+				MARKETING_VERSION = 1.6.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG-R";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -894,7 +899,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.6.1;
+				MARKETING_VERSION = 1.6.2;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG-R";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -951,6 +956,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = proxy_conf_helper/proxy_conf_helper.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 766AV76B44;
@@ -972,6 +978,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = proxy_conf_helper/proxy_conf_helper.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 766AV76B44;
