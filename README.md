@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/shadowsocksr/ShadowsocksX-NG.svg?branches=develop)](https://travis-ci.org/shadowsocksr/ShadowsocksX-NG)
 
-Next Generation of Shadowsocks(R) macOS client with limited SSR support.
+Next Generation of Shadowsocks(R) macOS client.
 
 ## Why?
 
