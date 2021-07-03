@@ -19,10 +19,11 @@ Serve pac js file as a file url. So only some souce code related to GUI left.
 
 ### Building
 
-- Xcode 12.5+
+- Xcode 12.0+
 
 ## Features
 
+- New Subscription URL support (Clash and Shadowrocket)
 - Show up/down speed
 - Limited SSR support
 - White domain list & white IP list
@@ -31,19 +32,9 @@ Serve pac js file as a file url. So only some souce code related to GUI left.
 - Auto update ACL white list from GutHub. (You can even customize your list)
 - Show QRCode for current server profile
 - Scan QRCode from screen
-- Import config.json to config all your servers (SSR-C# password protect not supported yet)
+- Import config.json to config all your servers
 - Auto launch at login
 - User rules for PAC
-- An advance preferences panel to configure:
-  - Local socks5 listen address
-  - Local socks5 listen port
-  - Local socks5 timeout
-  - If enable UDP relay
-  - GFW List URL
-  - ACL White List URL
-  - ACL GFW list and proxy bach CHN list
-- Manual spesify network service profiles which would be configure the proxy
-- Could reorder shadowsocks profiles by drag & drop in servers preferences panel
 
 ## Differences from original ShadowsocksX
 

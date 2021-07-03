@@ -31,6 +31,7 @@
 		0958DA7826483A8C00AF66D5 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 0958DA7726483A8C00AF66D5 /* ArgumentParser */; };
 		09666027261D4BC10022C66C /* privoxy in Resources */ = {isa = PBXBuildFile; fileRef = C6D4298F1DA75988002A5711 /* privoxy */; };
 		0966602E261D51580022C66C /* libcrypto.1.0.0.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 09F9DCD1261CC452006CA4B9 /* libcrypto.1.0.0.dylib */; };
+		0981DECA268CCA7600A39589 /* Yams in Frameworks */ = {isa = PBXBuildFile; productRef = 0981DEC9268CCA7600A39589 /* Yams */; };
 		0984E978263AFDF400A79681 /* SWBQRCodeWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0984E97A263AFDF400A79681 /* SWBQRCodeWindowController.xib */; };
 		099C07EE26249E6300D6FD67 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 099C07ED26249E6300D6FD67 /* Alamofire */; };
 		099F9844264ED10A00CC117B /* GCDWebServers in Frameworks */ = {isa = PBXBuildFile; productRef = 099F9843264ED10A00CC117B /* GCDWebServers */; };
@@ -213,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				099F9844264ED10A00CC117B /* GCDWebServers in Frameworks */,
+				0981DECA268CCA7600A39589 /* Yams in Frameworks */,
 				094A892F26248D4C00394747 /* LaunchAtLogin in Frameworks */,
 				099C07EE26249E6300D6FD67 /* Alamofire in Frameworks */,
 				9B3FFF3E1D08D9910019A709 /* SystemConfiguration.framework in Frameworks */,
@@ -397,6 +399,7 @@
 				094A892E26248D4C00394747 /* LaunchAtLogin */,
 				099C07ED26249E6300D6FD67 /* Alamofire */,
 				099F9843264ED10A00CC117B /* GCDWebServers */,
+				0981DEC9268CCA7600A39589 /* Yams */,
 			);
 			productName = "ShadowsocksX-NG";
 			productReference = 9B0BFFE51D0460A70040E62B /* ShadowsocksX-NG-R.app */;
@@ -486,6 +489,7 @@
 				099C07EC26249E6300D6FD67 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				0958DA6B2648123C00AF66D5 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
 				099F9842264ED10A00CC117B /* XCRemoteSwiftPackageReference "GCDWebServer" */,
+				0981DEC8268CCA7600A39589 /* XCRemoteSwiftPackageReference "Yams" */,
 			);
 			productRefGroup = 9B0BFFE61D0460A70040E62B /* Products */;
 			projectDirPath = "";
@@ -867,7 +871,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.6.3;
+				MARKETING_VERSION = 1.6.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG-R";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -899,7 +903,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.6.3;
+				MARKETING_VERSION = 1.6.4;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG-R";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1053,6 +1057,14 @@
 				minimumVersion = 0.4.3;
 			};
 		};
+		0981DEC8268CCA7600A39589 /* XCRemoteSwiftPackageReference "Yams" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jpsim/Yams";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.6;
+			};
+		};
 		099C07EC26249E6300D6FD67 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -1081,6 +1093,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0958DA6B2648123C00AF66D5 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
 			productName = ArgumentParser;
+		};
+		0981DEC9268CCA7600A39589 /* Yams */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0981DEC8268CCA7600A39589 /* XCRemoteSwiftPackageReference "Yams" */;
+			productName = Yams;
 		};
 		099C07ED26249E6300D6FD67 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
