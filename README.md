@@ -27,7 +27,7 @@ Serve pac js file as a file url. So only some souce code related to GUI left.
 - Show up/down speed
 - Limited SSR support
 - White domain list & white IP list
-- Use ss-local from shadowsocks-libev 3.3.5_1
+- Use ss-local from shadowsocks-libev 3.3.5_3
 - Auto update PAC by download GFW List from GitHub. (You can even customize your list)
 - Auto update ACL white list from GutHub. (You can even customize your list)
 - Show QRCode for current server profile
