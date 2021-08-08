@@ -39,8 +39,8 @@
 		09AB0C2E262F298A008E57C1 /* ProxyConfHelperVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB0C2D262F298A008E57C1 /* ProxyConfHelperVersion.swift */; };
 		09B0F22926413D7A0045297F /* IconUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B0F22826413D7A0045297F /* IconUtils.swift */; };
 		09C3968C26345B0B009C2C99 /* ProxyConfTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3968B26345B0B009C2C99 /* ProxyConfTool.swift */; };
+		09D1025B26C0287000B616E5 /* ss-local in Resources */ = {isa = PBXBuildFile; fileRef = 09D1025A26C0287000B616E5 /* ss-local */; };
 		09FD70CE26498B97000995F9 /* ProxyConfHelperVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB0C2D262F298A008E57C1 /* ProxyConfHelperVersion.swift */; };
-		9B07EFA71D048BBB0052D9DF /* ss-local in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA61D048BBB0052D9DF /* ss-local */; };
 		9B07EFAC1D048E880052D9DF /* menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA81D048E880052D9DF /* menu_icon@2x.png */; };
 		9B07EFAD1D048E880052D9DF /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA91D048E880052D9DF /* menu_icon.png */; };
 		9B07EFAE1D048E880052D9DF /* menu_icon_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFAA1D048E880052D9DF /* menu_icon_disabled.png */; };
@@ -153,8 +153,8 @@
 		09AB0C2D262F298A008E57C1 /* ProxyConfHelperVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfHelperVersion.swift; sourceTree = "<group>"; };
 		09B0F22826413D7A0045297F /* IconUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconUtils.swift; sourceTree = "<group>"; };
 		09C3968B26345B0B009C2C99 /* ProxyConfTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfTool.swift; sourceTree = "<group>"; };
+		09D1025A26C0287000B616E5 /* ss-local */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "ss-local"; sourceTree = "<group>"; };
 		09F9DCD1261CC452006CA4B9 /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
-		9B07EFA61D048BBB0052D9DF /* ss-local */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "ss-local"; sourceTree = "<group>"; };
 		9B07EFA81D048E880052D9DF /* menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon@2x.png"; sourceTree = "<group>"; };
 		9B07EFA91D048E880052D9DF /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = "<group>"; };
 		9B07EFAA1D048E880052D9DF /* menu_icon_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon_disabled.png; sourceTree = "<group>"; };
@@ -242,6 +242,7 @@
 		9B07EFB01D048E900052D9DF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				09D1025A26C0287000B616E5 /* ss-local */,
 				09F9DCD1261CC452006CA4B9 /* libcrypto.1.0.0.dylib */,
 				08CF21451E2A730E008F235D /* LICENSE */,
 				C6D4298E1DA75988002A5711 /* install_privoxy.sh */,
@@ -260,7 +261,6 @@
 				08F162C11EBEEC0F00C52869 /* gfwlist.acl */,
 				9B3FFF261D0898EB0019A709 /* gfwlist.txt */,
 				9B3FFF221D088E8D0019A709 /* abp.js */,
-				9B07EFA61D048BBB0052D9DF /* ss-local */,
 				9B07EFA81D048E880052D9DF /* menu_icon@2x.png */,
 				9B07EFA91D048E880052D9DF /* menu_icon.png */,
 				9B07EFAA1D048E880052D9DF /* menu_icon_disabled.png */,
@@ -529,6 +529,7 @@
 				9B07EFAD1D048E880052D9DF /* menu_icon.png in Resources */,
 				08F162C21EBEEC0F00C52869 /* gfwlist.acl in Resources */,
 				08F162C01EBEE6F800C52869 /* backchn.acl in Resources */,
+				09D1025B26C0287000B616E5 /* ss-local in Resources */,
 				C6D429951DA75988002A5711 /* reload_conf_privoxy.sh in Resources */,
 				9B0BFFEB1D0460A70040E62B /* Assets.xcassets in Resources */,
 				9B2491B71D0ACC3E003BBECC /* AdvPreferencesWindowController.xib in Resources */,
@@ -541,7 +542,6 @@
 				9B3FFF4C1D09D8F70019A709 /* install_helper.sh in Resources */,
 				C6D429961DA75988002A5711 /* start_privoxy.sh in Resources */,
 				9B07EFAC1D048E880052D9DF /* menu_icon@2x.png in Resources */,
-				9B07EFA71D048BBB0052D9DF /* ss-local in Resources */,
 				9B07EFAF1D048E880052D9DF /* menu_icon_disabled@2x.png in Resources */,
 				9B07EFAE1D048E880052D9DF /* menu_icon_disabled.png in Resources */,
 				088EC3991D5F5BA300E40791 /* whiteiplist.pac in Resources */,
@@ -871,7 +871,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.6.5;
+				MARKETING_VERSION = 1.6.6;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG-R";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -904,7 +904,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.6.5;
+				MARKETING_VERSION = 1.6.6;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG-R";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1055,7 +1055,7 @@
 			repositoryURL = "https://github.com/apple/swift-argument-parser";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.4.3;
+				minimumVersion = 0.4.4;
 			};
 		};
 		0981DEC8268CCA7600A39589 /* XCRemoteSwiftPackageReference "Yams" */ = {
@@ -1071,7 +1071,7 @@
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.4.2;
+				minimumVersion = 5.4.3;
 			};
 		};
 		099F9842264ED10A00CC117B /* XCRemoteSwiftPackageReference "GCDWebServer" */ = {
