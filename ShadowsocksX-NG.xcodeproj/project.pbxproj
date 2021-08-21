@@ -208,11 +208,11 @@
 			isa = PBXGroup;
 			children = (
 				0909C44626D13538001ABC66 /* ShadowsocksX.swift */,
+				9B0BFFE81D0460A70040E62B /* AppDelegate.swift */,
+				9B0BFFEF1D0460A70040E62B /* Info.plist */,
+				9B0BFFEA1D0460A70040E62B /* Assets.xcassets */,
 				0909C44526D134C7001ABC66 /* View */,
 				9B07EFB01D048E900052D9DF /* Resource */,
-				9B0BFFE81D0460A70040E62B /* AppDelegate.swift */,
-				9B0BFFEA1D0460A70040E62B /* Assets.xcassets */,
-				9B0BFFEF1D0460A70040E62B /* Info.plist */,
 			);
 			path = "ShadowsocksX-NG";
 			sourceTree = "<group>";
