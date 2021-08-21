@@ -31,7 +31,7 @@ struct ProxyConfHelper: ParsableCommand {
 
     mutating func run() throws {
         if version {
-            print("\(kProxyConfHelperVersion)")
+            print("1.3.2")
             throw ExitCode.success
         }
 
