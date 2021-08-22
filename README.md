@@ -1,4 +1,4 @@
-# ShadowsocksX-NG-R
+# ShadowsocksX-NG
 
 [![Build Status](https://travis-ci.org/shadowsocksr/ShadowsocksX-NG.svg?branches=develop)](https://travis-ci.org/shadowsocksr/ShadowsocksX-NG)
 
@@ -15,7 +15,7 @@ Serve pac js file as a file url. So only some souce code related to GUI left.
 
 ### Running
 
-- macOS Sierra(v10.12+)
+- macOS Sierra(v11.0+)
 
 ### Building
 
@@ -23,18 +23,11 @@ Serve pac js file as a file url. So only some souce code related to GUI left.
 
 ## Features
 
-- New Subscription URL support (Clash and Shadowrocket)
-- Show up/down speed
-- Limited SSR support
-- White domain list & white IP list
-- Use ss-local from shadowsocks-libev 3.3.5_3
-- Auto update PAC by download GFW List from GitHub. (You can even customize your list)
-- Auto update ACL white list from GutHub. (You can even customize your list)
-- Show QRCode for current server profile
-- Scan QRCode from screen
-- Import config.json to config all your servers
-- Auto launch at login
-- User rules for PAC
+- SS support
+- limited SSR support
+- subscription support (Clash and Shadowrocket)
+- find QR code on your screen
+
 
 ## Differences from original ShadowsocksX
 
@@ -47,4 +40,3 @@ Then you could configure your apps to use socks5 proxy manual.
 ## License
 
 The project is released under the terms of GPLv3.
-
