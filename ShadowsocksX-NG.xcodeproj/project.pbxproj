@@ -323,6 +323,7 @@
 				0958DA6B2648123C00AF66D5 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
 				099F9842264ED10A00CC117B /* XCRemoteSwiftPackageReference "GCDWebServer" */,
 				0981DEC8268CCA7600A39589 /* XCRemoteSwiftPackageReference "Yams" */,
+				097D4C5126DFDED300FC24D3 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 			);
 			productRefGroup = 9B0BFFE61D0460A70040E62B /* Products */;
 			projectDirPath = "";
@@ -702,6 +703,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.4.4;
+			};
+		};
+		097D4C5126DFDED300FC24D3 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
 			};
 		};
 		0981DEC8268CCA7600A39589 /* XCRemoteSwiftPackageReference "Yams" */ = {
