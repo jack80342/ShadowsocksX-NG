@@ -145,6 +145,7 @@
 		0909C44526D134C7001ABC66 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0909C44826D153DB001ABC66 /* MainMenu.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -187,7 +188,6 @@
 		9B0BFFDC1D0460A70040E62B = {
 			isa = PBXGroup;
 			children = (
-				0909C44826D153DB001ABC66 /* MainMenu.swift */,
 				094BFD4F2659F9E90055F263 /* ShadowsocksX-NG.entitlements */,
 				094A892626248C8300394747 /* ShadowsocksX-NG-Release.entitlements */,
 				9B0BFFE71D0460A70040E62B /* ShadowsocksX-NG */,
