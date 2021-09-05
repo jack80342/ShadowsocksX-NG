@@ -16,6 +16,7 @@
 		08F162C21EBEEC0F00C52869 /* gfwlist.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162C11EBEEC0F00C52869 /* gfwlist.acl */; };
 		0909C44726D13538001ABC66 /* ShadowsocksX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909C44626D13538001ABC66 /* ShadowsocksX.swift */; };
 		0909C44926D153DB001ABC66 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909C44826D153DB001ABC66 /* MainMenu.swift */; };
+		094A846526E4F9A100DD4191 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 094A846426E4F9A100DD4191 /* Introspect */; };
 		094A892F26248D4C00394747 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 094A892E26248D4C00394747 /* LaunchAtLogin */; };
 		0958DA67264810E100AF66D5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0958DA66264810E100AF66D5 /* main.swift */; };
 		0958DA7826483A8C00AF66D5 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 0958DA7726483A8C00AF66D5 /* ArgumentParser */; };
@@ -122,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				099F9844264ED10A00CC117B /* GCDWebServers in Frameworks */,
+				094A846526E4F9A100DD4191 /* Introspect in Frameworks */,
 				0981DECA268CCA7600A39589 /* Yams in Frameworks */,
 				094A892F26248D4C00394747 /* LaunchAtLogin in Frameworks */,
 				099C07EE26249E6300D6FD67 /* Alamofire in Frameworks */,
@@ -143,7 +145,6 @@
 		0909C44526D134C7001ABC66 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0909C44826D153DB001ABC66 /* MainMenu.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -186,6 +187,7 @@
 		9B0BFFDC1D0460A70040E62B = {
 			isa = PBXGroup;
 			children = (
+				0909C44826D153DB001ABC66 /* MainMenu.swift */,
 				094BFD4F2659F9E90055F263 /* ShadowsocksX-NG.entitlements */,
 				094A892626248C8300394747 /* ShadowsocksX-NG-Release.entitlements */,
 				9B0BFFE71D0460A70040E62B /* ShadowsocksX-NG */,
@@ -258,6 +260,7 @@
 				099C07ED26249E6300D6FD67 /* Alamofire */,
 				099F9843264ED10A00CC117B /* GCDWebServers */,
 				0981DEC9268CCA7600A39589 /* Yams */,
+				094A846426E4F9A100DD4191 /* Introspect */,
 			);
 			productName = "ShadowsocksX-NG";
 			productReference = 9B0BFFE51D0460A70040E62B /* ShadowsocksX-NG.app */;
@@ -740,6 +743,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		094A846426E4F9A100DD4191 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 097D4C5126DFDED300FC24D3 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
 		094A892E26248D4C00394747 /* LaunchAtLogin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 094A892D26248D4C00394747 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
