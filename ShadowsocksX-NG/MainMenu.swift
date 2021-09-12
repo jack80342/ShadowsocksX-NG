@@ -20,16 +20,19 @@ struct MainMenu: View {
                 if(item.type == "divider") {
                     Divider()
                 } else {
-                    Text(item.name)
-                        .foregroundColor(Color.black)
-                        .listRowBackground(
-                        selectedItem == item.name ? Color(red: 78 / 255, green: 160 / 255, blue: 252 / 255) : Color.clear)
-                        .onHover(
+                    HStack {
+                        Text(item.name)
+                        Spacer()
+                    }.listRowBackground(
+                        selectedItem == item.name ? Color(red: 78 / 255, green: 160 / 255, blue: 252 / 255) : Color.clear
+                    ).onHover(
                         perform: { hovering in
                             if hovering {
                                 self.selectedItem = item.name
-                            } else if selectedItem == item.name {
+                                print(item.name)
+                            } else {
                                 selectedItem = ""
+                                print("\(item.name)退出")
                             }
                         })
                 }
