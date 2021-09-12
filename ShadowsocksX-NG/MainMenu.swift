@@ -9,18 +9,30 @@ import SwiftUI
 import Introspect
 
 struct MainMenu: View {
+    @StateObject
+    private var modelData = ModelData()
+    @State
+    private var selectedItem = ""
 
     var body: some View {
         List {
-            Divider()
-            Text("显示日志")
-            Text("反馈")
-            Text("检查更新")
-            Text("打开时检查更新")
-            Text("关于")
-            Divider()
-            HStack {
-                Text("退出")
+            ForEach(modelData.itemList) { item in
+                if(item.type == "divider") {
+                    Divider()
+                } else {
+                    Text(item.name)
+                        .foregroundColor(Color.black)
+                        .listRowBackground(
+                        selectedItem == item.name ? Color(red: 78 / 255, green: 160 / 255, blue: 252 / 255) : Color.clear)
+                        .onHover(
+                        perform: { hovering in
+                            if hovering {
+                                self.selectedItem = item.name
+                            } else if selectedItem == item.name {
+                                selectedItem = ""
+                            }
+                        })
+                }
             }
         }.removeBackground()
     }

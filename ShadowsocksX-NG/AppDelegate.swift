@@ -11,7 +11,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     // 状态栏
     var statusBarItem: NSStatusItem!
-    
+
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         setStatusItem()
     }

@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "type": "divider",
+        "name": ""
+    },
+    {
+        "id": 2,
+        "type": "text",
+        "name": "显示日志"
+    },
+    {
+        "id": 3,
+        "type": "text",
+        "name": "反馈"
+    },
+    {
+        "id": 4,
+        "type": "text",
+        "name": "检查更新"
+    },
+    {
+        "id": 5,
+        "type": "text",
+        "name": "打开时检查更新"
+    },
+    {
+        "id": 6,
+        "type": "text",
+        "name": "关于"
+    },
+    {
+        "id": 7,
+        "type": "divider",
+        "name": ""
+    },
+    {
+        "id": 8,
+        "type": "text",
+        "name": "退出"
+    }
+]
