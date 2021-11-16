@@ -13,6 +13,15 @@ Serve pac js file as a file url. So only some souce code related to GUI left.
 
 ## Requirements
 
+### Dependencies
+```shell
+brew install libev;
+brew install c-ares;
+brew install libsodium;
+brew install mbedtls@2;
+brew install pcre;
+```
+
 ### Running
 
 - macOS Sierra(v10.12+)
