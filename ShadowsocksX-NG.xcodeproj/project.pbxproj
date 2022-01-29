@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -475,7 +475,7 @@
 				};
 			};
 			buildConfigurationList = 9B0BFFE01D0460A70040E62B /* Build configuration list for PBXProject "ShadowsocksX-NG" */;
-			compatibilityVersion = "Xcode 12.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
