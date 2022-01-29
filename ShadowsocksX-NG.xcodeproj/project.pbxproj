@@ -25,21 +25,21 @@
 		08F162C21EBEEC0F00C52869 /* gfwlist.acl in Resources */ = {isa = PBXBuildFile; fileRef = 08F162C11EBEEC0F00C52869 /* gfwlist.acl */; };
 		090294792639B2CC00FAC817 /* SWBQRCodeWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090294782639B2CC00FAC817 /* SWBQRCodeWindowController.swift */; };
 		092A90F32625E0F1007CA9CA /* SWBApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092A90F22625E0F1007CA9CA /* SWBApplication.swift */; };
+		092A920C27A5761E009DEA17 /* ss-local in Resources */ = {isa = PBXBuildFile; fileRef = 092A920B27A5761E009DEA17 /* ss-local */; };
 		0948A8CF26288D090060D4AA /* QRCodeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0948A8CE26288D090060D4AA /* QRCodeUtils.swift */; };
 		094A892F26248D4C00394747 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 094A892E26248D4C00394747 /* LaunchAtLogin */; };
 		0958DA67264810E100AF66D5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0958DA66264810E100AF66D5 /* main.swift */; };
 		0958DA7826483A8C00AF66D5 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 0958DA7726483A8C00AF66D5 /* ArgumentParser */; };
 		09666027261D4BC10022C66C /* privoxy in Resources */ = {isa = PBXBuildFile; fileRef = C6D4298F1DA75988002A5711 /* privoxy */; };
 		0966602E261D51580022C66C /* libcrypto.1.0.0.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 09F9DCD1261CC452006CA4B9 /* libcrypto.1.0.0.dylib */; };
+		0970E1DE27A566CE006A7817 /* GCDWebServers in Frameworks */ = {isa = PBXBuildFile; productRef = 0970E1DD27A566CE006A7817 /* GCDWebServers */; };
 		0981DECA268CCA7600A39589 /* Yams in Frameworks */ = {isa = PBXBuildFile; productRef = 0981DEC9268CCA7600A39589 /* Yams */; };
 		0984E978263AFDF400A79681 /* SWBQRCodeWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0984E97A263AFDF400A79681 /* SWBQRCodeWindowController.xib */; };
 		099C07EE26249E6300D6FD67 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 099C07ED26249E6300D6FD67 /* Alamofire */; };
-		099F9844264ED10A00CC117B /* GCDWebServers in Frameworks */ = {isa = PBXBuildFile; productRef = 099F9843264ED10A00CC117B /* GCDWebServers */; };
 		09AB0C26262F0485008E57C1 /* ProxyConfHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB0C25262F0485008E57C1 /* ProxyConfHelper.swift */; };
 		09AB0C2E262F298A008E57C1 /* ProxyConfHelperVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB0C2D262F298A008E57C1 /* ProxyConfHelperVersion.swift */; };
 		09B0F22926413D7A0045297F /* IconUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B0F22826413D7A0045297F /* IconUtils.swift */; };
 		09C3968C26345B0B009C2C99 /* ProxyConfTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3968B26345B0B009C2C99 /* ProxyConfTool.swift */; };
-		09D1025B26C0287000B616E5 /* ss-local in Resources */ = {isa = PBXBuildFile; fileRef = 09D1025A26C0287000B616E5 /* ss-local */; };
 		09FD70CE26498B97000995F9 /* ProxyConfHelperVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB0C2D262F298A008E57C1 /* ProxyConfHelperVersion.swift */; };
 		9B07EFAC1D048E880052D9DF /* menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA81D048E880052D9DF /* menu_icon@2x.png */; };
 		9B07EFAD1D048E880052D9DF /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B07EFA91D048E880052D9DF /* menu_icon.png */; };
@@ -142,6 +142,7 @@
 		0906EA09264D81260072108E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SubscribePreferenceWindowController.strings; sourceTree = "<group>"; };
 		0906EA0B264D812E0072108E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SWBQRCodeWindowController.strings; sourceTree = "<group>"; };
 		092A90F22625E0F1007CA9CA /* SWBApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBApplication.swift; sourceTree = "<group>"; };
+		092A920B27A5761E009DEA17 /* ss-local */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "ss-local"; sourceTree = "<group>"; };
 		0948A8CE26288D090060D4AA /* QRCodeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeUtils.swift; sourceTree = "<group>"; };
 		094A892626248C8300394747 /* ShadowsocksX-NG-RRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ShadowsocksX-NG-RRelease.entitlements"; sourceTree = "<group>"; };
 		094BFD4E2659F9D80055F263 /* proxy_conf_helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = proxy_conf_helper.entitlements; sourceTree = "<group>"; };
@@ -153,7 +154,6 @@
 		09AB0C2D262F298A008E57C1 /* ProxyConfHelperVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfHelperVersion.swift; sourceTree = "<group>"; };
 		09B0F22826413D7A0045297F /* IconUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconUtils.swift; sourceTree = "<group>"; };
 		09C3968B26345B0B009C2C99 /* ProxyConfTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyConfTool.swift; sourceTree = "<group>"; };
-		09D1025A26C0287000B616E5 /* ss-local */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "ss-local"; sourceTree = "<group>"; };
 		09F9DCD1261CC452006CA4B9 /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
 		9B07EFA81D048E880052D9DF /* menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_icon@2x.png"; sourceTree = "<group>"; };
 		9B07EFA91D048E880052D9DF /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = "<group>"; };
@@ -213,7 +213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				099F9844264ED10A00CC117B /* GCDWebServers in Frameworks */,
+				0970E1DE27A566CE006A7817 /* GCDWebServers in Frameworks */,
 				0981DECA268CCA7600A39589 /* Yams in Frameworks */,
 				094A892F26248D4C00394747 /* LaunchAtLogin in Frameworks */,
 				099C07EE26249E6300D6FD67 /* Alamofire in Frameworks */,
@@ -242,7 +242,7 @@
 		9B07EFB01D048E900052D9DF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				09D1025A26C0287000B616E5 /* ss-local */,
+				092A920B27A5761E009DEA17 /* ss-local */,
 				09F9DCD1261CC452006CA4B9 /* libcrypto.1.0.0.dylib */,
 				08CF21451E2A730E008F235D /* LICENSE */,
 				C6D4298E1DA75988002A5711 /* install_privoxy.sh */,
@@ -398,8 +398,8 @@
 			packageProductDependencies = (
 				094A892E26248D4C00394747 /* LaunchAtLogin */,
 				099C07ED26249E6300D6FD67 /* Alamofire */,
-				099F9843264ED10A00CC117B /* GCDWebServers */,
 				0981DEC9268CCA7600A39589 /* Yams */,
+				0970E1DD27A566CE006A7817 /* GCDWebServers */,
 			);
 			productName = "ShadowsocksX-NG";
 			productReference = 9B0BFFE51D0460A70040E62B /* ShadowsocksX-NG-R.app */;
@@ -488,8 +488,8 @@
 				094A892D26248D4C00394747 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
 				099C07EC26249E6300D6FD67 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				0958DA6B2648123C00AF66D5 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
-				099F9842264ED10A00CC117B /* XCRemoteSwiftPackageReference "GCDWebServer" */,
 				0981DEC8268CCA7600A39589 /* XCRemoteSwiftPackageReference "Yams" */,
+				0970E1DC27A566CE006A7817 /* XCRemoteSwiftPackageReference "GCDWebServer" */,
 			);
 			productRefGroup = 9B0BFFE61D0460A70040E62B /* Products */;
 			projectDirPath = "";
@@ -529,7 +529,7 @@
 				9B07EFAD1D048E880052D9DF /* menu_icon.png in Resources */,
 				08F162C21EBEEC0F00C52869 /* gfwlist.acl in Resources */,
 				08F162C01EBEE6F800C52869 /* backchn.acl in Resources */,
-				09D1025B26C0287000B616E5 /* ss-local in Resources */,
+				092A920C27A5761E009DEA17 /* ss-local in Resources */,
 				C6D429951DA75988002A5711 /* reload_conf_privoxy.sh in Resources */,
 				9B0BFFEB1D0460A70040E62B /* Assets.xcassets in Resources */,
 				9B2491B71D0ACC3E003BBECC /* AdvPreferencesWindowController.xib in Resources */,
@@ -786,7 +786,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -838,7 +838,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -870,8 +870,8 @@
 					"$(PROJECT_DIR)/ShadowsocksX-NG",
 					"$(PROJECT_DIR)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.6.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.6.8;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG-R";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -903,8 +903,8 @@
 					"$(PROJECT_DIR)/ShadowsocksX-NG",
 					"$(PROJECT_DIR)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 1.6.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.6.8;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuyuzhou.ShadowsocksX-NG-R";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -971,7 +971,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -993,7 +993,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -1058,6 +1058,14 @@
 				minimumVersion = 1.0.2;
 			};
 		};
+		0970E1DC27A566CE006A7817 /* XCRemoteSwiftPackageReference "GCDWebServer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JacobHearst/GCDWebServer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.5.5;
+			};
+		};
 		0981DEC8268CCA7600A39589 /* XCRemoteSwiftPackageReference "Yams" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jpsim/Yams";
@@ -1071,15 +1079,7 @@
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.4.4;
-			};
-		};
-		099F9842264ED10A00CC117B /* XCRemoteSwiftPackageReference "GCDWebServer" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jack80342/GCDWebServer";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.5.5;
+				minimumVersion = 5.5.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -1095,6 +1095,11 @@
 			package = 0958DA6B2648123C00AF66D5 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
 			productName = ArgumentParser;
 		};
+		0970E1DD27A566CE006A7817 /* GCDWebServers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0970E1DC27A566CE006A7817 /* XCRemoteSwiftPackageReference "GCDWebServer" */;
+			productName = GCDWebServers;
+		};
 		0981DEC9268CCA7600A39589 /* Yams */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0981DEC8268CCA7600A39589 /* XCRemoteSwiftPackageReference "Yams" */;
@@ -1104,11 +1109,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 099C07EC26249E6300D6FD67 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		099F9843264ED10A00CC117B /* GCDWebServers */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 099F9842264ED10A00CC117B /* XCRemoteSwiftPackageReference "GCDWebServer" */;
-			productName = GCDWebServers;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -129,7 +129,7 @@ class ServerProfileManager: NSObject {
         openPanel.becomeKey()
         openPanel.begin { (result) -> Void in
             // TODO not freeze the screen when running import process
-            if (result.rawValue == NSFileHandlingPanelOKButton && (openPanel.url) != nil) {
+            if (result.rawValue == NSApplication.ModalResponse.OK.rawValue && (openPanel.url) != nil) {
                 let fileManager = FileManager.default
                 let filePath: String = (openPanel.url?.path)!
                 if (fileManager.fileExists(atPath: filePath) && filePath.hasSuffix("json")) {
@@ -229,7 +229,7 @@ class ServerProfileManager: NSObject {
             savePanel.nameFieldStringValue = "export.json"
             savePanel.becomeKey()
             savePanel.begin { (result) -> Void in
-                if (result.rawValue == NSFileHandlingPanelOKButton && (savePanel.url) != nil) {
+                if (result.rawValue == NSApplication.ModalResponse.OK.rawValue && (savePanel.url) != nil) {
                     //write jsonArr1 back to file
                     try! jsonString.write(toFile: (savePanel.url?.path)!, atomically: true, encoding: String.Encoding.utf8)
                     NSWorkspace.shared.selectFile((savePanel.url?.path)!, inFileViewerRootedAtPath: (savePanel.directoryURL?.path)!)

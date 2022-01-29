@@ -24,11 +24,11 @@ brew install pcre;
 
 ### Running
 
-- macOS Sierra(v10.12+)
+- macOS Catalina(v10.15+)
 
 ### Building
 
-- Xcode 12.0+
+- Xcode 13.0+
 
 ## Features
 
@@ -36,7 +36,7 @@ brew install pcre;
 - Show up/down speed
 - Limited SSR support
 - White domain list & white IP list
-- Use ss-local from shadowsocks-libev 3.3.5_3
+- Use ss-local from [shadowsocks-libev](https://formulae.brew.sh/formula/shadowsocks-libev)
 - Auto update PAC by download GFW List from GitHub. (You can even customize your list)
 - Auto update ACL white list from GutHub. (You can even customize your list)
 - Show QRCode for current server profile
