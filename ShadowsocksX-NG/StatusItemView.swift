@@ -36,25 +36,26 @@ open class StatusItemView: NSControl {
 
         darkMode = SystemThemeChangeHelper.isCurrentDark()
 
-        SystemThemeChangeHelper.addRespond(target: self, selector: #selector(changeMode))
+        SystemThemeChangeHelper.addRespond(target: self, selector: #selector(changeMode as () -> Void))
 
-        let iconImageName = IconUtils.getIconImageName();
-        if(iconImageName != "") {
+        let iconImageName = IconUtils.getIconImageName()
+        if iconImageName != "" {
             image = NSImage(named: NSImage.Name(iconImageName))!
         }
     }
 
-    required public init?(coder: NSCoder) {
+    @available(*, unavailable)
+    public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    open override func draw(_ dirtyRect: NSRect) {
+    override open func draw(_ dirtyRect: NSRect) {
         statusItem.drawStatusBarBackground(in: dirtyRect, withHighlight: mouseDown)
 
         fontColor = (darkMode || mouseDown) ? NSColor.white : NSColor.black
         let fontAttributes = [NSAttributedString.Key.font: NSFont.systemFont(ofSize: fontSize), NSAttributedString.Key.foregroundColor: fontColor] as [NSAttributedString.Key: Any]
 
-        if(showSpeed) {
+        if showSpeed {
             let upRateString = NSAttributedString(string: upRate + " ↑", attributes: fontAttributes)
             let upRateRect = upRateString.boundingRect(with: NSSize(width: 100, height: 100), options: .usesLineFragmentOrigin)
             upRateString.draw(at: NSMakePoint(bounds.width - upRateRect.width - 5, 10))
@@ -72,7 +73,7 @@ open class StatusItemView: NSControl {
         downRate = formatRateData(down)
 
         DispatchQueue.main.async {
-            self.setNeedsDisplay()
+            self.needsDisplay = true
         }
     }
 
@@ -118,23 +119,23 @@ open class StatusItemView: NSControl {
 
     @objc func changeMode() {
         darkMode = SystemThemeChangeHelper.isCurrentDark()
-        setNeedsDisplay()
+        needsDisplay = true
     }
 }
 
-//action
+// action
 extension StatusItemView: NSMenuDelegate {
-    open override func mouseDown(with theEvent: NSEvent) {
-        statusItem.popUpMenu(menu!)
+    override open func mouseDown(with theEvent: NSEvent) {
+        statusItem.menu = menu
     }
 
     public func menuWillOpen(_ menu: NSMenu) {
         mouseDown = true
-        setNeedsDisplay()
+        needsDisplay = true
     }
 
     public func menuDidClose(_ menu: NSMenu) {
         mouseDown = false
-        setNeedsDisplay()
+        needsDisplay = true
     }
 }
