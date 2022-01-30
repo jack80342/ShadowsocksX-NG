@@ -126,7 +126,7 @@ open class StatusItemView: NSControl {
 // action
 extension StatusItemView: NSMenuDelegate {
     override open func mouseDown(with theEvent: NSEvent) {
-        statusItem.menu = menu
+        statusItem.popUpMenu(menu!)
     }
 
     public func menuWillOpen(_ menu: NSMenu) {
