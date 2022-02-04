@@ -49,7 +49,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
 
     @IBOutlet weak var lanchAtLoginMenuItem: NSMenuItem!
     @IBOutlet weak var connectAtLaunchMenuItem: NSMenuItem!
-    @IBOutlet weak var ShowNetworkSpeedItem: NSMenuItem!
+//    @IBOutlet weak var ShowNetworkSpeedItem: NSMenuItem!
     @IBOutlet weak var checkUpdateMenuItem: NSMenuItem!
     @IBOutlet weak var checkUpdateAtLaunchMenuItem: NSMenuItem!
     @IBOutlet var updateSubscribeAtLaunchMenuItem: NSMenuItem!
@@ -57,9 +57,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
     @IBOutlet var editSubscribeMenuItem: NSMenuItem!
 
     // MARK: Variables
-    var statusItemView: StatusItemView?
+//    var statusItemView: StatusItemView?
     var statusItem: NSStatusItem!
-    var speedMonitor: NetWorkMonitor?
+//    var speedMonitor: NetWorkMonitor?
     var globalSubscribeFeed: Subscribe!
     var proxyConfHelper: ProxyConfHelper = ProxyConfHelper()
 
@@ -100,7 +100,14 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
             "AutoUpdateSubscribe": false,
             ])
 
-        setSpeedStatusItem(defaults.bool(forKey: "enable_showSpeed"))
+//        setSpeedStatusItem(defaults.bool(forKey: "enable_showSpeed"))
+        if(statusItem == nil) {
+            statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+            let image = NSImage(named: NSImage.Name("menu_icon"))
+            image!.isTemplate = true
+            statusItem!.button?.image = image
+            statusItem!.menu = statusMenu
+        }
 
         let notifyCenter = NotificationCenter.default
         notifyCenter.addObserver(forName: NSNotification.Name(rawValue: NOTIFY_ADV_PROXY_CONF_CHANGED), object: nil, queue: nil
@@ -485,14 +492,14 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
         PingServers.instance.ping()
     }
 
-    @IBAction func showSpeedTap(_ sender: NSMenuItem) {
-        let defaults = UserDefaults.standard
-        var enable = defaults.bool(forKey: "enable_showSpeed")
-        enable = !enable
-        setSpeedStatusItem(enable)
-        defaults.set(enable, forKey: "enable_showSpeed")
-        updateMainMenu()
-    }
+//    @IBAction func showSpeedTap(_ sender: NSMenuItem) {
+//        let defaults = UserDefaults.standard
+//        var enable = defaults.bool(forKey: "enable_showSpeed")
+//        enable = !enable
+//        setSpeedStatusItem(enable)
+//        defaults.set(enable, forKey: "enable_showSpeed")
+//        updateMainMenu()
+//    }
 
     @IBAction func showLogs(_ sender: NSMenuItem) {
         // 在控制台打开日志
@@ -594,17 +601,17 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
             image = NSImage(named: NSImage.Name(iconImageName))!
         }
         image.isTemplate = true
-        statusItem!.image = image
+        statusItem!.button?.image = image
 
-        if(statusItem!.view != nil) {
-            statusItem!.length = 85
-            statusItemView = StatusItemView(statusItem: statusItem!, menu: statusMenu)
-            statusItem!.view = statusItemView
-
-            speedMonitor?.stop()
-            speedMonitor = NetWorkMonitor(statusItemView: statusItemView!)
-            speedMonitor?.start()
-        }
+//        if(statusItem!.view != nil) {
+//            statusItem!.length = 85
+//            statusItemView = StatusItemView(statusItem: statusItem!, menu: statusMenu)
+//            statusItem!.view = statusItemView
+//
+//            speedMonitor?.stop()
+//            speedMonitor = NetWorkMonitor(statusItemView: statusItemView!)
+//            speedMonitor?.start()
+//        }
     }
 
     func updateMainMenu() {
@@ -621,10 +628,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
             toggleRunningMenuItem.title = "Turn Shadowsocks On".localized
             image = NSImage(named: NSImage.Name("menu_icon_disabled"))!
             image.isTemplate = true
-            statusItem!.image = image
+            statusItem!.button?.image = image
         }
 
-        ShowNetworkSpeedItem.state = defaults.bool(forKey: "enable_showSpeed") ? NSControl.StateValue(rawValue: 1) : NSControl.StateValue(rawValue: 0)
+//        ShowNetworkSpeedItem.state = defaults.bool(forKey: "enable_showSpeed") ? NSControl.StateValue(rawValue: 1) : NSControl.StateValue(rawValue: 0)
         connectAtLaunchMenuItem.state = defaults.bool(forKey: "ConnectAtLaunch") ? NSControl.StateValue(rawValue: 1) : NSControl.StateValue(rawValue: 0)
         checkUpdateAtLaunchMenuItem.state = defaults.bool(forKey: "AutoCheckUpdate") ? NSControl.StateValue(rawValue: 1) : NSControl.StateValue(rawValue: 0)
     }
@@ -711,34 +718,34 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDele
 
     }
 
-    func setSpeedStatusItem(_ showSpeed: Bool) {
-        // should not operate the system status bar
-        // we can add sub menu like bittorrent sync
-        if(statusItem == nil) {
-            statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-            let image = NSImage(named: NSImage.Name("menu_icon"))
-            image!.isTemplate = true
-            statusItem!.image = image
-            statusItem!.menu = statusMenu
-        }
-
-        if showSpeed {
-            statusItem!.length = 85
-            statusItemView = StatusItemView(statusItem: statusItem!, menu: statusMenu)
-            statusItem!.view = statusItemView
-
-            if speedMonitor == nil {
-                speedMonitor = NetWorkMonitor(statusItemView: statusItemView!)
-            }
-            speedMonitor?.start()
-        } else {
-            statusItem!.length = 20
-            statusItem!.view = nil
-
-            speedMonitor?.stop()
-            speedMonitor = nil
-        }
-    }
+//    func setSpeedStatusItem(_ showSpeed: Bool) {
+//        // should not operate the system status bar
+//        // we can add sub menu like bittorrent sync
+//        if(statusItem == nil) {
+//            statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+//            let image = NSImage(named: NSImage.Name("menu_icon"))
+//            image!.isTemplate = true
+//            statusItem!.button?.image = image
+//            statusItem!.menu = statusMenu
+//        }
+//
+//        if showSpeed {
+//            statusItem!.length = 85
+//            statusItemView = StatusItemView(statusItem: statusItem!, menu: statusMenu)
+//            statusItem!.view = statusItemView
+//
+//            if speedMonitor == nil {
+//                speedMonitor = NetWorkMonitor(statusItemView: statusItemView!)
+//            }
+//            speedMonitor?.start()
+//        } else {
+//            statusItem!.length = 20
+//            statusItem!.view = nil
+//
+//            speedMonitor?.stop()
+//            speedMonitor = nil
+//        }
+//    }
 
     func checkForUpdate(mustShowAlert: Bool) -> Void {
         let versionChecker = VersionChecker()

@@ -59,8 +59,8 @@
 /* Class = "NSMenuItem"; title = "ACL Mode"; ObjectID = "Yub-b0-bni"; */
 "Yub-b0-bni.title" = "ACL Mode";
 
-/* Class = "NSMenuItem"; title = "Show network speed"; ObjectID = "a3h-uQ-DuO"; */
-"a3h-uQ-DuO.title" = "Show network speed";
+///* Class = "NSMenuItem"; title = "Show network speed"; ObjectID = "a3h-uQ-DuO"; */
+//"a3h-uQ-DuO.title" = "Show network speed";
 
 /* Class = "NSMenuItem"; title = "Connect At Launch"; ObjectID = "aB3-cf-5j0"; */
 "aB3-cf-5j0.title" = "Connect At Launch";
