@@ -18,7 +18,7 @@
                 <outlet property="ACLBackChinaMenuItem" destination="lam-el-r4I" id="O41-Lr-e0h"/>
                 <outlet property="ACLModeMenuItem" destination="Yub-b0-bni" id="e0w-Td-aE9"/>
                 <outlet property="RunningStatusMenuItem" destination="fzk-mE-CEV" id="R4x-gK-Qcw"/>
-                <outlet property="ShowNetworkSpeedItem" destination="a3h-uQ-DuO" id="OLq-K8-rEO"/>
+                <!--<outlet property="ShowNetworkSpeedItem" destination="a3h-uQ-DuO" id="OLq-K8-rEO"/>-->
                 <outlet property="autoModeMenuItem" destination="r07-Gu-aEz" id="9aH-pQ-Rgi"/>
                 <outlet property="checkUpdateAtLaunchMenuItem" destination="3nJ-zQ-Agj" id="bbR-eO-uCo"/>
                 <outlet property="checkUpdateMenuItem" destination="wyZ-4G-qg9" id="Sva-xA-VQY"/>
@@ -194,12 +194,12 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="Show network speed" id="a3h-uQ-DuO">
+                <!--<menuItem title="Show network speed" id="a3h-uQ-DuO">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="showSpeedTap:" target="Voe-Tx-rLC" id="8Zp-lV-yLN"/>
                     </connections>
-                </menuItem>
+                </menuItem>-->
                 <menuItem title="Ping server" id="zfR-Jt-GmS">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
