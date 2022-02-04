@@ -73,10 +73,18 @@ class VersionChecker: NSObject {
         // alertSubtitle: String,
         // alertConfirmBtn: String,
         // alertCancelBtn: String
-        AF.request(LATEST_RELEASE_URL).responseJSON { response in
+
+        struct Version: Decodable {
+            let tagName: String
+            enum CodingKeys: String, CodingKey {
+                case tagName = "tag_name"
+            }
+        }
+        AF.request(LATEST_RELEASE_URL).responseDecodable(of: Version.self) { response in
+            debugPrint("Response: \(response)")
             switch response.result {
             case .success:
-                callback(check(onlineData: response.value as! NSDictionary))
+                callback(check(onlineData: response.value))
             case .failure(let error):
                 print("Request failed with error: \(error)")
                 callback(["newVersion": false,
@@ -89,9 +97,9 @@ class VersionChecker: NSObject {
             }
         }
 
-        func check(onlineData: NSDictionary) -> NSDictionary {
+        func check(onlineData: Version?) -> NSDictionary {
             // 已发布的最新版本，请求频率限制：https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting
-            let tagName = onlineData["tag_name"];
+            let tagName = onlineData?.tagName;
             if(tagName == nil) {
                 return ["newVersion": false,
                     "error": "",
@@ -101,7 +109,7 @@ class VersionChecker: NSObject {
                     "CancelBtn": ""
                 ]
             }
-            var versionString: String = tagName as! String
+            var versionString: String = tagName!
             //  去掉版本前缀：v
             versionString = String(versionString[versionString.range(of: "v")!.upperBound...])
 
