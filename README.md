@@ -4,7 +4,7 @@
 
 Next Generation of Shadowsocks(R) macOS client.
 
-## Why?
+## About
 
 The original implement embed ss-local source. This makes it hard to update ss-local.
 
@@ -33,7 +33,6 @@ brew install pcre;
 ## Features
 
 - New Subscription URL support (Clash and Shadowrocket)
-- Show up/down speed
 - Limited SSR support
 - White domain list & white IP list
 - Use ss-local from [shadowsocks-libev](https://formulae.brew.sh/formula/shadowsocks-libev)
