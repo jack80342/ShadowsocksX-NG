@@ -9,11 +9,11 @@
 
 cd `dirname "${BASH_SOURCE[0]}"`
 ssLocalVersion=3.3.5_4.static
-mkdir -p "$HOME/Library/Application Support/ShadowsocksX-NG-R/ss-local-$ssLocalVersion"
-cp -f ss-local "$HOME/Library/Application Support/ShadowsocksX-NG-R/ss-local-$ssLocalVersion/"
-rm -f "$HOME/Library/Application Support/ShadowsocksX-NG-R/ss-local"
-ln -s "$HOME/Library/Application Support/ShadowsocksX-NG-R/ss-local-$ssLocalVersion/ss-local" "$HOME/Library/Application Support/ShadowsocksX-NG-R/ss-local"
+mkdir -p "$HOME/Library/Application Support/ShadowsocksX-NG/ss-local-$ssLocalVersion"
+cp -f ss-local "$HOME/Library/Application Support/ShadowsocksX-NG/ss-local-$ssLocalVersion/"
+rm -f "$HOME/Library/Application Support/ShadowsocksX-NG/ss-local"
+ln -s "$HOME/Library/Application Support/ShadowsocksX-NG/ss-local-$ssLocalVersion/ss-local" "$HOME/Library/Application Support/ShadowsocksX-NG/ss-local"
 
-cp -f libcrypto.1.0.0.dylib "$HOME/Library/Application Support/ShadowsocksX-NG-R/"
+cp -f libcrypto.1.0.0.dylib "$HOME/Library/Application Support/ShadowsocksX-NG/"
 
 echo done
