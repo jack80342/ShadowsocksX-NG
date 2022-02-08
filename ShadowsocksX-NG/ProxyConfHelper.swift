@@ -1,6 +1,6 @@
 //
 //  ProxyConfHelper.swift
-//  ShadowsocksX-NG-R
+//  ShadowsocksX-NG
 //
 //  Created by 钟增强 on 2021/4/20.
 //
@@ -10,7 +10,7 @@ import GCDWebServers
 
 class ProxyConfHelper {
 
-    let kShadowsocksHelper = "/Library/Application Support/ShadowsocksX-NG-R/proxy_conf_helper"
+    let kShadowsocksHelper = "/Library/Application Support/ShadowsocksX-NG/proxy_conf_helper"
 
     var webServer: GCDWebServer? = nil
 

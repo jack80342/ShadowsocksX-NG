@@ -1,6 +1,6 @@
 //
 //  SWBApplication.swift
-//  ShadowsocksX-NG-R
+//  ShadowsocksX-NG
 //
 //  Created by 钟增强 on 2021/4/13.
 //

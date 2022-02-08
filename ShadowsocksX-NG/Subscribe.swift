@@ -97,7 +97,7 @@ class Subscribe: NSObject {
     fileprivate func sendRequest(url: String, options: Any, callback: @escaping (String, String) -> Void) {
         let headers: HTTPHeaders = [
             "token": self.token,
-            "User-Agent": "ShadowsocksX-NG-R " + (getLocalInfo()["CFBundleShortVersionString"] as! String)
+            "User-Agent": "ShadowsocksX-NG " + (getLocalInfo()["CFBundleShortVersionString"] as! String)
         ]
 
         AF.request(url, headers: headers)

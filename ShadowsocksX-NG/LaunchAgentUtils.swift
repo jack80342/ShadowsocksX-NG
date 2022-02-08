@@ -10,10 +10,10 @@ import Foundation
 
 let SS_LOCAL_VERSION = "3.3.5_4.static"
 let PRIVOXY_VERSION = "3.0.32.static"
-let APP_SUPPORT_DIR = "/Library/Application Support/ShadowsocksX-NG-R/"
+let APP_SUPPORT_DIR = "/Library/Application Support/ShadowsocksX-NG/"
 let LAUNCH_AGENT_DIR = "/Library/LaunchAgents/"
-let LAUNCH_AGENT_CONF_SSLOCAL_NAME = "com.qiuyuzhou.shadowsocksX-NG-R.local.plist"
-let LAUNCH_AGENT_CONF_PRIVOXY_NAME = "com.qiuyuzhou.shadowsocksX-NG-R.http.plist"
+let LAUNCH_AGENT_CONF_SSLOCAL_NAME = "com.qiuyuzhou.shadowsocksX-NG.local.plist"
+let LAUNCH_AGENT_CONF_PRIVOXY_NAME = "com.qiuyuzhou.shadowsocksX-NG.http.plist"
 
 
 func getFileSHA1Sum(_ filepath: String) -> String {
@@ -64,7 +64,7 @@ func generateSSLocalLauchAgentPlist() -> Bool {
     
     // For a complete listing of the keys, see the launchd.plist manual page.
     let dict: NSMutableDictionary = [
-        "Label": "com.qiuyuzhou.shadowsocksX-NG-R.local",
+        "Label": "com.qiuyuzhou.shadowsocksX-NG.local",
         "WorkingDirectory": NSHomeDirectory() + APP_SUPPORT_DIR,
         "KeepAlive": true,
         "StandardOutPath": logFilePath,
@@ -205,7 +205,7 @@ func generatePrivoxyLauchAgentPlist() -> Bool {
     
     // For a complete listing of the keys, see the launchd.plist manual page.
     let dict: NSMutableDictionary = [
-        "Label": "com.qiuyuzhou.shadowsocksX-NG-R.http",
+        "Label": "com.qiuyuzhou.shadowsocksX-NG.http",
         "WorkingDirectory": NSHomeDirectory() + APP_SUPPORT_DIR,
         "KeepAlive": true,
         "StandardOutPath": logFilePath,

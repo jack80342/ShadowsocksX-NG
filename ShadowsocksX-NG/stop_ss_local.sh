@@ -8,4 +8,4 @@
 
 
 
-launchctl unload "$HOME/Library/LaunchAgents/com.qiuyuzhou.shadowsocksX-NG-R.local.plist"
+launchctl unload "$HOME/Library/LaunchAgents/com.qiuyuzhou.shadowsocksX-NG.local.plist"

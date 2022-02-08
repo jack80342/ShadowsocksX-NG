@@ -9,7 +9,7 @@
 import Cocoa
 import Alamofire
 
-let LATEST_RELEASE_URL = "https://api.github.com/repos/jack80342/ShadowsocksX-NG-R/releases/latest"
+let LATEST_RELEASE_URL = "https://api.github.com/repos/jack80342/ShadowsocksX-NG/releases/latest"
 let _VERSION_XML_LOCAL: String = Bundle.main.bundlePath + "/Contents/Info.plist"
 
 class VersionChecker: NSObject {
