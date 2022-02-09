@@ -1,4 +1,4 @@
-# ShadowsocksX-NG-R
+# ShadowsocksX-NG
 
 [![Build Status](https://travis-ci.org/shadowsocksr/ShadowsocksX-NG.svg?branches=develop)](https://travis-ci.org/shadowsocksr/ShadowsocksX-NG)
 
