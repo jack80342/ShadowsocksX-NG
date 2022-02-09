@@ -37,7 +37,7 @@ class ProxyConfHelper {
 
         var str: String?
         if let data = data {
-            str = String(data: data, encoding: .utf8)
+            str = String(data: data, encoding: .utf8)?.trimmingCharacters(in: .newlines)
         }
 
         if str != kProxyConfHelperVersion {
